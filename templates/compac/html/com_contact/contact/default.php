@@ -1,198 +1,109 @@
 <?php
-/**
- * @package     Joomla.Site
- * @subpackage  com_contact
- *
- * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
 defined('_JEXEC') or die;
-
-$cparams = JComponentHelper::getParams('com_media');
 ?>
-<div class="contact<?php echo $this->pageclass_sfx?>">
-<?php if ($this->params->get('show_page_heading')) : ?>
-<h1>
-	<?php echo $this->escape($this->params->get('page_heading')); ?>
-</h1>
-<?php endif; ?>
-	<?php if ($this->contact->name && $this->params->get('show_name')) : ?>
-		<div class="page-header">
-			<h2>
-				<span class="contact-name"><?php echo $this->contact->name; ?></span>
-			</h2>
+<div id="max-container-content" class="max-container">
+	<div class="container">
+		<div class="content">
+			<div id="contact-page" class="template clear-fix">
+				<div class="heading clear-fix">
+					<h2><?php echo $this->contact->name; ?></h2>
+				</div>
+				<div class="contact-wrapper clear-fix">
+					<div class="contact-left">
+						<h2>{article 1115}{title}{/article}</h2>
+						{article 1115}{introtext}{/article}
+						<div id="contact-link">
+							<ul>
+															
+														<li><a id="c-who" href="index.php?option=com_content&view=category&layout=contact&id=50&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>">Contact info</a></li>
+														
+							<li><a id="c-event" href="index.php?option=com_content&view=category&layout=exhibitions&id=51&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>">Exhibitions</a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="contact-right">
+											
+						
+												
+						<form id="emailForm" name="emailForm" method="post" action="/index.php?option=com_mwccontact&amp;mid=5&amp;Itemid=63&amp;lang=en" class="form-contact">
+							<div class="contact-col-1">
+								<h2>Where can we contact you</h2>
+								<div class="eachInput clear-fix">
+									<label for="company" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 64px;">Company</label><input type="text" name="company" id="company" class="input-txt input-toggle" title="Company" value=""><span class="red span-input">*</span>
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="address" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 96px;">Address</label><input type="text" id="address" name="address" class="input-txt input-toggle" title="Address" value="">
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="postalcode" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 128px;">Postal Code</label><input type="text" id="postalcode" name="postalcode" class="input-txt input-toggle" title="Postal Code" value="">
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="city" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 160px;">City</label><input type="text" id="city" name="city" class="input-txt input-toggle" title="City" value="">
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="country" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 192px;">Country</label><input type="text" id="country" name="country" class="input-txt input-toggle" title="Country" value="">
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="name" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 224px;">Name</label><input type="text" id="name" name="name" class="input-txt input-toggle" title="Name" value=""><span class="red span-input">*</span>
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="phone" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 256px;">Phone</label><input type="text" id="phone" name="phone" class="input-txt input-toggle" title="Phone" value=""><span class="red span-input">*</span>
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="fax" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 288px;">Fax</label><input type="text" name="fax" id="fax" class="input-txt input-toggle" title="Fax" value="">
+								</div>
+								<div class="eachInput clear-fix">
+									<label for="email" class="txt1" style="display: block; position: absolute; z-index: 2; left: 216px; top: 320px;">E-mail</label><input type="text" name="email" id="email" class="input-txt input-toggle" title="E-mail" value=""><span class="red span-input">*</span>
+								</div>
+								<p>Fields marked <span class="red">*</span> must be filled out to submit.</p>							</div>
+							<div class="contact-col-2">
+								<h2>Please contact us for further information</h2>
+																<div class="eachInput clear-fix">
+									<input type="checkbox" value="Information about the nearest COMPAC dealer" name="futureinfo[]" id="futureinfo_4" class="input-chk">
+									<span>Information about the nearest COMPAC dealer</span>
+								</div>
+																<div class="eachInput clear-fix">
+									<input type="checkbox" value="Spare parts for COMPAC products" name="futureinfo[]" id="futureinfo_5" class="input-chk">
+									<span>Spare parts for COMPAC products</span>
+								</div>
+																<div class="eachInput clear-fix">
+									<input type="checkbox" value="We would like to be contacted by COMPAC" name="futureinfo[]" id="futureinfo_6" class="input-chk">
+									<span>We would like to be contacted by COMPAC</span>
+								</div>
+																
+								<div class="tempContact">
+									<h2>Please send us leaflets on the following products</h2>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Trolley Jacks" name="leaflets[]" id="leaflets_7" class="input-chk"><span>Trolley Jacks</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Axle Stands" name="leaflets[]" id="leaflets_8" class="input-chk"><span>Axle Stands</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Air-hydraulic Jacks" name="leaflets[]" id="leaflets_9" class="input-chk"><span>Air-hydraulic Jacks</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Bottle Jacks" name="leaflets[]" id="leaflets_10" class="input-chk"><span>Bottle Jacks</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Transmission Jacks" name="leaflets[]" id="leaflets_11" class="input-chk"><span>Transmission Jacks</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Workshop Presses" name="leaflets[]" id="leaflets_12" class="input-chk"><span>Workshop Presses</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Body Repair kit" name="leaflets[]" id="leaflets_13" class="input-chk"><span>Body Repair kit</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Workshop Cranes" name="leaflets[]" id="leaflets_14" class="input-chk"><span>Workshop Cranes</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Wheel Dolly" name="leaflets[]" id="leaflets_15" class="input-chk"><span>Wheel Dolly</span></div>
+																		<div class="eachInput clear-fix"><input type="checkbox" value="Spring Compressor" name="leaflets[]" id="leaflets_16" class="input-chk"><span>Spring Compressor</span></div>
+																		
+								</div>
+							</div>
+							<div class="clear"></div>	
+							<label>Comments</label>
+							<textarea name="message" id="message"></textarea>
+							<div class="contact-submit clear-fix">
+								<a onclick="click_send()" id="" class="btnSend" href="javascript:void(0)">Send</a>
+								<input type="submit" style="display: none" value="Send" id="send" name="send">
+								<input type="reset" value="Reset" id="" class="btnReset">
+							</div>
+							<input type="hidden" value="com_contact" name="option">
+							<input type="hidden" value="contact" name="view">
+							<input type="hidden" value="submit" name="task">
+							<input type="hidden" value="1" name="id">
+							<input type="hidden" value="5" name="mid">
+							
+							<input type="hidden" value="1" name="4a6e299164fd154370ae03114d477a9b">						</form>
+											</div>
+				</div>				
+			</div>			
 		</div>
-	<?php endif;  ?>
-	<?php if ($this->params->get('show_contact_category') == 'show_no_link') : ?>
-		<h3>
-			<span class="contact-category"><?php echo $this->contact->category_title; ?></span>
-		</h3>
-	<?php endif; ?>
-	<?php if ($this->params->get('show_contact_category') == 'show_with_link') : ?>
-		<?php $contactLink = ContactHelperRoute::getCategoryRoute($this->contact->catid);?>
-		<h3>
-			<span class="contact-category"><a href="<?php echo $contactLink; ?>">
-				<?php echo $this->escape($this->contact->category_title); ?></a>
-			</span>
-		</h3>
-	<?php endif; ?>
-	<?php if ($this->params->get('show_contact_list') && count($this->contacts) > 1) : ?>
-		<form action="#" method="get" name="selectForm" id="selectForm">
-			<?php echo JText::_('COM_CONTACT_SELECT_CONTACT'); ?>
-			<?php echo JHtml::_('select.genericlist',  $this->contacts, 'id', 'class="inputbox" onchange="document.location.href = this.value"', 'link', 'name', $this->contact->link);?>
-		</form>
-	<?php endif; ?>
-
-	<?php if ($this->params->get('show_tags', 1) && !empty($this->item->tags)) : ?>
-		<?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
-		<?php echo $this->item->tagLayout->render($this->item->tags->itemTags); ?>
-	<?php endif; ?>
-
-	<?php  if ($this->params->get('presentation_style') == 'sliders'):?>
-		<div class="accordion" id="accordionContact">
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="accordionContact" href="#basic-details">
-					<?php echo JText::_('COM_CONTACT_DETAILS');?>
-					</a>
-				</div>
-				<div id="basic-details" class="accordion-body collapse in">
-					<div class="accordion-inner">
-	<?php endif; ?>
-	<?php if ($this->params->get('presentation_style') == 'plain'):?>
-		<?php  echo '<h3>' . JText::_('COM_CONTACT_DETAILS') . '</h3>';  ?>
-	<?php endif; ?>
-	<?php if ($this->contact->image && $this->params->get('show_image')) : ?>
-		<div class="thumbnail pull-right">
-			<?php echo JHtml::_('image', $this->contact->image, JText::_('COM_CONTACT_IMAGE_DETAILS'), array('align' => 'middle')); ?>
-		</div>
-	<?php endif; ?>
-
-	<?php if ($this->contact->con_position && $this->params->get('show_position')) : ?>
-		<dl class="contact-position dl-horizontal">
-			<dd>
-				<?php echo $this->contact->con_position; ?>
-			</dd>
-		</dl>
-	<?php endif; ?>
-
-	<?php echo $this->loadTemplate('address'); ?>
-
-	<?php if ($this->params->get('allow_vcard')) :	?>
-		<?php echo JText::_('COM_CONTACT_DOWNLOAD_INFORMATION_AS');?>
-			<a href="<?php echo JRoute::_('index.php?option=com_contact&amp;view=contact&amp;id='.$this->contact->id . '&amp;format=vcf'); ?>">
-			<?php echo JText::_('COM_CONTACT_VCARD');?></a>
-	<?php endif; ?>
-	<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-					</div>
-				</div>
-			</div>
-		</div>
-	<?php endif; ?>
-	<?php if ($this->params->get('show_email_form') && ($this->contact->email_to || $this->contact->user_id)) : ?>
-
-		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="accordionContact" href="#display-form">
-					<?php echo JText::_('COM_CONTACT_EMAIL_FORM');?>
-					</a>
-				</div>
-				<div id="display-form" class="accordion-body collapse">
-					<div class="accordion-inner">
-		<?php endif; ?>
-		<?php if ($this->params->get('presentation_style') == 'plain'):?>
-			<?php  echo '<h3>'. JText::_('COM_CONTACT_EMAIL_FORM').'</h3>';  ?>
-		<?php endif; ?>
-		<?php  echo $this->loadTemplate('form');  ?>
-		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-					</div>
-				</div>
-			</div>
-		<?php endif; ?>
-	<?php endif; ?>
-
-	<?php if ($this->params->get('show_links')) : ?>
-		<?php echo $this->loadTemplate('links'); ?>
-	<?php endif; ?>
-
-	<?php if ($this->params->get('show_articles') && $this->contact->user_id && $this->contact->articles) : ?>
-			<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="accordionContact" href="#display-articles">
-					<?php echo JText::_('JGLOBAL_ARTICLES');?>
-					</a>
-				</div>
-				<div id="display-articles" class="accordion-body collapse">
-					<div class="accordion-inner">
-			<?php endif; ?>
-			<?php if  ($this->params->get('presentation_style') == 'plain'):?>
-			<?php echo '<h3>'. JText::_('JGLOBAL_ARTICLES').'</h3>'; ?>
-			<?php endif; ?>
-			<?php echo $this->loadTemplate('articles'); ?>
-			<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-					</div>
-				</div>
-			</div>
-			<?php endif; ?>
-	<?php endif; ?>
-	<?php if ($this->params->get('show_profile') && $this->contact->user_id && JPluginHelper::isEnabled('user', 'profile')) : ?>
-		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="accordionContact" href="#display-profile">
-					<?php echo JText::_('COM_CONTACT_PROFILE');?>
-					</a>
-				</div>
-				<div id="display-profile" class="accordion-body collapse">
-					<div class="accordion-inner">
-		<?php endif; ?>
-		<?php if ($this->params->get('presentation_style') == 'plain'):?>
-			<?php echo '<h3>'. JText::_('COM_CONTACT_PROFILE').'</h3>'; ?>
-		<?php endif; ?>
-		<?php echo $this->loadTemplate('profile'); ?>
-		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-					</div>
-				</div>
-			</div>
-		<?php endif; ?>
-	<?php endif; ?>
-	<?php if ($this->contact->misc && $this->params->get('show_misc')) : ?>
-		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="accordionContact" href="#display-misc">
-					<?php echo JText::_('COM_CONTACT_OTHER_INFORMATION');?>
-					</a>
-				</div>
-				<div id="display-misc" class="accordion-body collapse">
-					<div class="accordion-inner">
-		<?php endif; ?>
-		<?php if ($this->params->get('presentation_style') == 'plain'):?>
-			<?php echo '<h3>'. JText::_('COM_CONTACT_OTHER_INFORMATION').'</h3>'; ?>
-		<?php endif; ?>
-				<div class="contact-miscinfo">
-					<dl class="dl-horizontal">
-						<dt>
-							<span class="<?php echo $this->params->get('marker_class'); ?>">
-								<?php echo $this->params->get('marker_misc'); ?>
-							</span>
-						</dt>
-						<dd>
-							<span class="contact-misc">
-								<?php echo $this->contact->misc; ?>
-							</span>
-						</dd>
-					</dl>
-				</div>
-		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-					</div>
-				</div>
-			</div>
-		<?php endif; ?>
-	<?php endif; ?>
-	<?php if ($this->params->get('presentation_style') == 'sliders'):?>
-		</div>
-	<?php endif; ?>
+	</div>
+</div>
