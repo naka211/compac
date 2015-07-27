@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system" method="upgrade">
+    <name>CmsMart VM Multiupload Attachment</name>
+    <author>CmsMart Team</author>
+    <creationDate>2015</creationDate>
+    <copyright>Copyright (C) 2004-2012 Cmsmart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorUrl>http://cmsmart.net</authorUrl>
+    <version>4.0.0</version>
+    <description>
+	<![CDATA[ 
+			<div>A Joomla plugin to multi-upload attachments file in tab product description for Virtuemart 3.0.6x and Joomla 3.x</div>
+    		<script>
+				jQuery(document).ready(function () {
+					jQuery('#jform_params_width').blur(function(){
+						var vl = jQuery(this).val();
+						var vl2 = isNaN(vl);
+						if(vl2 == true){
+							alert('Entered the wrong data, you need to fill "Width" exact numbers !');
+							jQuery(this).val('300');
+						}
+					});
+				});
+			</script>
+		]]>
+	</description>
+    
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install.mysql.sql</file>
+        </sql>
+    </install>
+    <files>
+        <filename plugin="vm_multiupload_attachment">vm_multiupload_attachment.php</filename>
+		<filename>index.html</filename>
+		<filename>install.mysql.sql</filename>
+        <folder>js</folder>
+    </files>
+    
+    <config>
+	    <fields name="params">
+			<fieldset name="basic">
+				<field name="loadjs" type="radio" default="0" label="Load jQuery" description="Load jQuery if your website not avaiable !">
+			  		<option value="1">JYES</option>
+			  		<option value="0">JNO</option>
+			 	 </field>
+			 	 <field name="position" type="radio" default=".product-description" label="Select Position" description="Choose position you want to display files attached">
+			  		<option value=".addtocart-area">Add to cart area</option>
+			  		<option value=".main-image">Below Main Image</option>
+			  		<option value=".product-description">Below Description</option>
+			 	 </field>
+			 	 <field name="width" type="text" default="300" label="Width (px)" description="Width for are files attached" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

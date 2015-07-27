@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.ie_rounded_corners {
+  /*behavior:url(border-radius.htc);*/
+  /*behavior:url(src/css/border-radius.htc);*/
+  behavior:url(src/css/PIE.htc);
+}
+.ie78_css3{ behavior:url(src/css/PIE.htc);}

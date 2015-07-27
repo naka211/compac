@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="3.4" method="upgrade">
+	<name>pkg_sv-SE</name>
+	<packagename>sv-SE</packagename>
+	<version>3.4.1.3</version>
+	<creationDate>24/03/2015</creationDate>
+	<author>Swedish Joomla! Translator Group</author>
+	<authorEmail>svenskjoomla@mei-ya.se</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<url></url>
+	<packager></packager>
+	<packagerurl></packagerurl>
+	<description><![CDATA[Svensk översättning för Joomla! 3.4.1 ver3 <br />Översatt av SvenskJoomla.]]></description>
+	<files>
+		<file type="language" client="site" id="sv-SE">site_sv-SE.zip</file>
+		<file type="language" client="administrator" id="sv-SE">admin_sv-SE.zip</file>
+	</files>
+</extension>

@@ -1,0 +1,15 @@
+$main_text:#6f6f6f;
+
+$imagedir:'../images/'; 
+
+@mixin bg($filename,$hor-pos:0,$ver-pos:0,$repeat: no-repeat) {
+    background: transparent url(#{$imagedir}#{$filename}) $hor-pos $ver-pos $repeat;
+}
+
+@mixin font-1{
+	font-family:"Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+@mixin bt($hor:0px,$ver:0px){
+	background:url(../images/imgButton.png) $hor $ver no-repeat;
+}

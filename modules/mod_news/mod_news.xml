@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_news</name>
+	<author>T.Trung</author>
+	<creationDate>July 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Mod news</description>
+	<files>
+		<filename module="mod_news">mod_news.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>mod_news.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_articles_category.ini</language>
+		<language tag="en-GB">en-GB.mod_articles_category.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_CATEGORY" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="5"
+					label="JCATEGORY"
+					description="MOD_ARTICLES_CATEGORY_FIELD_CATEGORY_DESC"
+				>
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
