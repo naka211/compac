@@ -14,10 +14,8 @@ defined('_JEXEC') or die;
 						{article 1115}{introtext}{/article}
 						<div id="contact-link">
 							<ul>
-															
-														<li><a id="c-who" href="index.php?option=com_content&view=category&layout=contact&id=50&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>">Contact info</a></li>
-														
-							<li><a id="c-event" href="index.php?option=com_content&view=category&layout=exhibitions&id=51&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>">Exhibitions</a></li>								
+								<li><a id="c-who" href="index.php?option=com_content&view=category&layout=contact&id=50&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>"><?php echo JText::_('CONTACT_INFO');?></a></li>
+								<li><a id="c-event" href="index.php?option=com_content&view=category&layout=exhibitions&id=51&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>"><?php echo JText::_('EXHIBITIONS');?></a></li>								
 							</ul>
 						</div>
 					</div>

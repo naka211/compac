@@ -64,7 +64,7 @@ $langTag = JFactory::getLanguage()->getTag();
 				<a href="#"><img width="155" border="0" src="images/stories/logo-<?php echo $langTag;?>.png"></a>
 			</div>
 			<div class="header clear-fix">
-				<h2 class="logo"><a href="index.php">COMPAC</a></h2>
+				<h2 class="logo"><a href="<?php echo JURI::base();?>">COMPAC</a></h2>
 				<div class="language-bar">
 					{module FaLang Language Switcher}
 					<div class="clear"></div>
@@ -80,23 +80,13 @@ $langTag = JFactory::getLanguage()->getTag();
 	
 	
 <div class="max-container" id="max-container-footer">
+	{module HomeProductSlider}
 	 <div class="product-slideshow-wrapper clear-fix">
 		<div class="heading-1 clear-fix">
 			<h2>Products</h2>
 		</div>
 		<ul id="product-slideshow">
 			<li><a data-title="product1" href="template.php"><img src="<?php echo $tmpl;?>images/prd1.jpg" /></a></li>
-			<li><a data-title="product2" href="template.php"><img src="<?php echo $tmpl;?>images/prd2.jpg" /></a></li>
-			<li><a data-title="product3" href="template.php"><img src="<?php echo $tmpl;?>images/prd3.jpg" /></a></li>
-			<li><a data-title="product4" href="template.php"><img src="<?php echo $tmpl;?>images/prd4.jpg" /></a></li>
-			<li><a data-title="product5" href="template.php"><img src="<?php echo $tmpl;?>images/prd5.jpg" /></a></li>
-			<li><a data-title="product6" href="template.php"><img src="<?php echo $tmpl;?>images/prd6.jpg" /></a></li>
-			<li><a data-title="product7" href="template.php"><img src="<?php echo $tmpl;?>images/prd1.jpg" /></a></li>
-			<li><a data-title="product8" href="template.php"><img src="<?php echo $tmpl;?>images/prd2.jpg" /></a></li>
-			<li><a data-title="product9" href="template.php"><img src="<?php echo $tmpl;?>images/prd3.jpg" /></a></li>
-			<li><a data-title="product10" href="template.php"><img src="<?php echo $tmpl;?>images/prd4.jpg" /></a></li>
-			<li><a data-title="product11" href="template.php"><img src="<?php echo $tmpl;?>images/prd5.jpg" /></a></li>
-			<li><a data-title="product12" href="template.php"><img src="<?php echo $tmpl;?>images/prd6.jpg" /></a></li>
 		</ul>
 		<a id="product-next" class="product-button">Next</a>
 		<a id="product-prev" class="product-button">Prev</a>
@@ -105,50 +95,7 @@ $langTag = JFactory::getLanguage()->getTag();
 				<h2>Foot operated workshop presses 16 -25 tons</h2>
 				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
 			 </div>
-			 <div class="eachTooltip" id="product2">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product3">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product4">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product5">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product6">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product7">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product8">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product9">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product10">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product11">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 <div class="eachTooltip" id="product12">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
+			 
 		</div>
 	</div>
 	

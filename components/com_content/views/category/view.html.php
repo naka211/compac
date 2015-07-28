@@ -140,6 +140,11 @@ class ContentViewCategory extends JViewCategory
 			// We need to set the layout from the query in case this is an alternative menu item (with an alternative layout)
 			$this->setLayout($active->query['layout']);
 		}
+		//T.Trung
+		if(JRequest::getVar('layout')){
+			$this->setLayout(JRequest::getVar('layout'));
+		}
+		//T.Trung end
 
 		// For blog layouts, preprocess the breakdown of leading, intro and linked articles.
 		// This makes it much easier for the designer to just interrogate the arrays.
