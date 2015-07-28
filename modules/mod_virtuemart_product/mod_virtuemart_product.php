@@ -86,6 +86,7 @@ $currency = CurrencyDisplay::getInstance( );
 ob_start();
 
 /* Load tmpl default */
+
 require(JModuleHelper::getLayoutPath('mod_virtuemart_product',$layout));
 $output = ob_get_clean();
 echo $output;

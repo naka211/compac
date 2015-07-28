@@ -81,23 +81,7 @@ $langTag = JFactory::getLanguage()->getTag();
 	
 <div class="max-container" id="max-container-footer">
 	{module HomeProductSlider}
-	 <div class="product-slideshow-wrapper clear-fix">
-		<div class="heading-1 clear-fix">
-			<h2>Products</h2>
-		</div>
-		<ul id="product-slideshow">
-			<li><a data-title="product1" href="template.php"><img src="<?php echo $tmpl;?>images/prd1.jpg" /></a></li>
-		</ul>
-		<a id="product-next" class="product-button">Next</a>
-		<a id="product-prev" class="product-button">Prev</a>
-		<div class="product-tool-tip clear-fix">
-			 <div class="eachTooltip" id="product1">
-				<h2>Foot operated workshop presses 16 -25 tons</h2>
-				<p>Phasellus ultrices nulla quis nibh. Ornare Quisque a lectus. Donec gravida amets sectetuer ligula vulputate sem tristique cursus...</p>
-			 </div>
-			 
-		</div>
-	</div>
+	 
 	
 	<div class="container">
 		<div class="footer clear-fix">
