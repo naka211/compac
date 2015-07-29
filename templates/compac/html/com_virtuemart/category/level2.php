@@ -17,9 +17,13 @@ $db= JFactory::getDBO();
 					?>
 					<div class="title-prd"><img alt="" src="templates/compac/images/bullet_title.png"><?php echo vmText::_($category->category_name) ?></div>
 					<?php foreach($products1 as $product){
-						$q = "SELECT file_url FROM #__virtuemart_medias WHERE virtuemart_media_id = ".$product->virtuemart_media_id[0];
+						$mid = (int)$product->virtuemart_media_id[0];
+						$q = "SELECT file_url FROM #__virtuemart_medias WHERE virtuemart_media_id = ".$mid;
 						$db->setQuery($q);
 						$file_url = $db->loadResult();
+						if(!$file_url){
+							$file_url = "components/com_virtuemart/assets/images/vmgeneral/noimage.gif";
+						}
 					?>
 					<div class="prd-item"> <a href="<?php echo $product->link.'&Itemid=1002&lang='.JRequest::getVar('lang');?>"><span><?php echo $product->product_name;?></span> <img src="<?php echo JURI::base().$file_url;?>"> </a> </div>
 					<?php }?>

@@ -70,5 +70,38 @@ class VirtueMartControllerVirtuemart extends JControllerLegacy
         $session->set('notify', 1);
         die(true);
 	}
+	
+	function downloadFile(){
+		$file = JRequest::getVar('file');
+		$pathFile = JPATH_BASE.DIRECTORY_SEPARATOR."images".DIRECTORY_SEPARATOR.$file;
+		
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header('Content-disposition: attachment; filename='.basename($pathFile));
+		header("Content-Type: application/pdf");
+		header("Content-Transfer-Encoding: binary");
+		header('Content-Length: '. filesize($pathFile));
+		readfile($pathFile);
+		exit;
+	}
+	
+	function accessDistribute(){
+		$pass = JRequest::getVar('pass');
+		
+		$db = JFactory::getDBO();
+		$db->setQuery("SELECT introtext FROM #__content WHERE id = 113");
+		$savedPass = $db->loadResult();
+		
+		$session = JFactory::getSession();
+		
+		if($pass == strip_tags($savedPass)){
+			$session->set('accessDis', 1);
+			$this->setRedirect("index.php?option=com_virtuemart&view=category&layout=documents&virtuemart_category_id=20&Itemid=1001");
+		} else {
+			echo '<script>alert("Password is incorrect, please contact us."); history.back();</script>';
+		}
+		
+		
+	}
 }
  //pure php no closing tag
