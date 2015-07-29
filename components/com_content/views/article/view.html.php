@@ -112,6 +112,7 @@ class ContentViewArticle extends JViewLegacy
 				{
 					$this->setLayout($layout);
 				}
+				
 			}
 		}
 		else
@@ -127,6 +128,11 @@ class ContentViewArticle extends JViewLegacy
 				$this->setLayout($layout);
 			}
 		}
+		//T.Trung
+		if(JRequest::getVar('layout')){
+			$this->setLayout(JRequest::getVar('layout'));
+		}
+		//T.Trung end
 
 		$offset = $this->state->get('list.offset');
 

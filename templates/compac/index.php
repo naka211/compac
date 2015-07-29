@@ -13,6 +13,7 @@ $langTag = JFactory::getLanguage()->getTag();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery-1.6.4.min.js"></script>
 <jdoc:include type="head" />
 
 <link rel="stylesheet" type="text/css" href="<?php echo $tmpl;?>src/css/style.css"/>
@@ -33,7 +34,7 @@ $langTag = JFactory::getLanguage()->getTag();
 <!--[if IE 7]>
 <link href="<?php echo $tmpl;?>src/css/ie7.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery-1.6.4.min.js"></script>
+
 <script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery.carouFredSel-5.5.0-packed.js"></script>
 <script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery.tooltip.min.js"></script>
 <script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery.easing.js"></script>

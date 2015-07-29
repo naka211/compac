@@ -78,7 +78,7 @@ class ContactControllerContact extends JControllerForm
 		$dispatcher = JEventDispatcher::getInstance();
 
 		// Validate the posted data.
-		$form = $model->getForm();
+		/*$form = $model->getForm();
 
 		if (!$form)
 		{
@@ -114,7 +114,7 @@ class ContactControllerContact extends JControllerForm
 			$this->setRedirect(JRoute::_('index.php?option=com_contact&view=contact&id=' . $stub, false));
 
 			return false;
-		}
+		}*/
 
 		// Validation succeeded, continue with custom handlers
 		$results = $dispatcher->trigger('onValidateContact', array(&$contact, &$data));
@@ -158,7 +158,8 @@ class ContactControllerContact extends JControllerForm
 		}
 		else
 		{
-			$this->setRedirect(JRoute::_('index.php?option=com_contact&view=contact&id=' . $stub, false), $msg);
+			//$this->setRedirect(JRoute::_('index.php?option=com_contact&view=contact&id=' . $stub, false), $msg);
+			$this->setRedirect('index.php?option=com_content&view=article&layout=thankyou&id=94&Itemid=1003');
 		}
 
 		return true;
@@ -189,20 +190,55 @@ class ContactControllerContact extends JControllerForm
 			$fromname = $app->get('fromname');
 			$sitename = $app->get('sitename');
 
-			$name    = $data['contact_name'];
-			$email   = JStringPunycode::emailToPunycode($data['contact_email']);
-			$subject = $data['contact_subject'];
-			$body    = $data['contact_message'];
+			$subject = 'Kontact to Compac.dk';
+			
+			$company	= JRequest::getVar( 'company',		'',			'post' );
+			$address	= JRequest::getVar( 'address',		'',			'post' );
+			$postalcode	= JRequest::getVar( 'postalcode',	'',			'post' );
+			$city		= JRequest::getVar( 'city',			'',			'post' );
+			$country	= JRequest::getVar( 'country',		'',			'post' );
+			$name		= JRequest::getVar( 'name',			'',			'post' );
+			$phone		= JRequest::getVar( 'phone',		'',			'post' );
+			$fax		= JRequest::getVar( 'fax',			'',			'post' );
+			$email		= JRequest::getVar( 'email',		'',			'post' );
+			$message	= JRequest::getVar( 'message',		'',			'post' );
+			$futureinfo	= JRequest::getVar( 'futureinfo',	'',			'post' );
+			$leaflets	= JRequest::getVar( 'leaflets',		'',			'post' );
+		
+			$body = "Kontact To: www.compac.dk <br />";
+			$body .= "Company: ".$company."<br />";
+			$body .= "Address: ".$address."<br />";
+			$body .= "Postal Code: ".$postalcode."<br />";
+			$body .= "City: ".$city."<br />";
+			$body .= "Country: ".$country."<br />";
+			$body .= "Name: ".$name."<br />";
+			$body .= "Phone: ".$phone."<br />";
+			$body .= "Fax: ".$fax."<br />";
+			$body .= "E-mail: ".$email."<br />";
+			$body .= "Comment: ".$message."<br />";
+			$body .= "Further information: <br />";
+			$body .= "<ul><li>";
+			$body .= implode("</li><li>", $futureinfo);
+			$body .= "</li></ul>";
+			$body .= "<br />";
+			$body .= "Leaflets :<br />";
+			$body .= "<ul><li>";
+			$body .= implode("</li><li>",$leaflets);
+			$body .= "</li></ul>";
+			$body .= "<br />";
+			$body .= "Med venlig hilsen <br />";
+			$body .= "Compac in Denmark <br />";
 
 			// Prepare email body
-			$prefix = JText::sprintf('COM_CONTACT_ENQUIRY_TEXT', JUri::base());
-			$body	= $prefix . "\n" . $name . ' <' . $email . '>' . "\r\n\r\n" . stripslashes($body);
+			//$prefix = JText::sprintf('COM_CONTACT_ENQUIRY_TEXT', JUri::base());
+			//$body	= $prefix . "\n" . $name . ' <' . $email . '>' . "\r\n\r\n" . stripslashes($body);
 
 			$mail = JFactory::getMailer();
 			$mail->addRecipient($contact->email_to);
 			$mail->addReplyTo($email, $name);
 			$mail->setSender(array($mailfrom, $fromname));
 			$mail->setSubject($sitename . ': ' . $subject);
+			$mail->isHTML(true);
 			$mail->setBody($body);
 			$sent = $mail->Send();
 

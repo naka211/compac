@@ -1,8 +1,8 @@
-$(document).ready(function(){
-	var wHeight = $(window).height();
-	var wWidth = $(window).width();
+jQuery(document).ready(function(){
+	var wHeight = jQuery(window).height();
+	var wWidth = jQuery(window).width();
 
-	$('#main-slider').cycle({ 
+	jQuery('#main-slider').cycle({ 
 		fx:    'fade', 
     	delay: -1000,
 		speed:1000,
@@ -10,7 +10,7 @@ $(document).ready(function(){
 	});
 
 	//Partner slide
-	$('#product-slideshow').carouFredSel({
+	jQuery('#product-slideshow').carouFredSel({
 		circular		:true,
 		infinite		:true,		
 		items			:{
@@ -28,27 +28,27 @@ $(document).ready(function(){
 		auto			:true
 	});
 
-	$("#product-slideshow a").tooltip({
+	jQuery("#product-slideshow a").tooltip({
 	    showURL     : false,
 	    track       : true,
 	    bodyHandler : function() {	    	
-	    	//console.log($(this).data('title'));
-	    	var id = '#' + $(this).data('title');
+	    	//console.log(jQuery(this).data('title'));
+	    	var id = '#' + jQuery(this).data('title');
 	    	//console.log(id);
-	        return $(id).html();
+	        return jQuery(id).html();
 	    },
 	    extraClass: "customCompac"
 	});
 
 
-	$('input.input-toggle').inputToggle();	
+	jQuery('input.input-toggle').inputToggle();	
 
 });
 
-$.fn.showFeatureText = function() {
+jQuery.fn.showFeatureText = function() {
 	return this.each(function(){    
-		var box = $(this);
-		var text = $('p',this);    
+		var box = jQuery(this);
+		var text = jQuery('p',this);    
 	
 		text.css({ position: 'absolute', bottom: '0px' }).hide();		
 		

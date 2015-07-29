@@ -1,5 +1,6 @@
 <?php
 defined('_JEXEC') or die;
+JHTML::_('behavior.formvalidator');
 ?>
 
 <div id="max-container-content" class="max-container">
@@ -21,35 +22,35 @@ defined('_JEXEC') or die;
 						</div>
 					</div>
 					<div class="contact-right">
-						<form id="emailForm" name="emailForm" method="post" action="index.php" class="form-contact">
+						<form id="emailForm" name="emailForm" method="post" action="index.php" class="form-contact form-validate" >
 							<div class="contact-col-1">
 								<h2><?php echo JText::_('WHERE_CAN');?></h2>
 								<div class="eachInput clear-fix">
-									<input type="text" name="company" id="company" class="input-txt input-toggle" title="Company" value="" placeholder="<?php echo JText::_('COMPANY');?>">
+									<input type="text" name="company" id="company" class="input-txt required" title="Company" value="" placeholder="<?php echo JText::_('COMPANY');?>">
 									<span class="red span-input">*</span> </div>
 								<div class="eachInput clear-fix">
-									<input type="text" id="address" name="address" class="input-txt input-toggle" title="Address" value="" placeholder="<?php echo JText::_('ADDRESS');?>">
+									<input type="text" id="address" name="address" class="input-txt" title="Address" value="" placeholder="<?php echo JText::_('ADDRESS');?>">
 								</div>
 								<div class="eachInput clear-fix">
-									<input type="text" id="postalcode" name="postalcode" class="input-txt input-toggle" title="Postal Code" value="" placeholder="<?php echo JText::_('POSTAL_CODE');?>">
+									<input type="text" id="postalcode" name="postalcode" class="input-txt" title="Postal Code" value="" placeholder="<?php echo JText::_('POSTAL_CODE');?>">
 								</div>
 								<div class="eachInput clear-fix">
-									<input type="text" id="city" name="city" class="input-txt input-toggle" title="City" value="" placeholder="<?php echo JText::_('CITY');?>">
+									<input type="text" id="city" name="city" class="input-txt" title="City" value="" placeholder="<?php echo JText::_('CITY');?>">
 								</div>
 								<div class="eachInput clear-fix">
-									<input type="text" id="country" name="country" class="input-txt input-toggle" title="Country" value="" placeholder="<?php echo JText::_('COUNTRY');?>">
+									<input type="text" id="country" name="country" class="input-txt" title="Country" value="" placeholder="<?php echo JText::_('COUNTRY');?>">
 								</div>
 								<div class="eachInput clear-fix">
-									<input type="text" id="name" name="name" class="input-txt input-toggle" title="Name" value="" placeholder="<?php echo JText::_('NAME');?>">
+									<input type="text" id="name" name="name" class="input-txt required" title="Name" value="" placeholder="<?php echo JText::_('NAME');?>">
 									<span class="red span-input">*</span> </div>
 								<div class="eachInput clear-fix">
-									<input type="text" id="phone" name="phone" class="input-txt input-toggle" title="Phone" value="" placeholder="<?php echo JText::_('PHONE');?>">
+									<input type="text" id="phone" name="phone" class="input-txt required" title="Phone" value="" placeholder="<?php echo JText::_('PHONE');?>">
 									<span class="red span-input">*</span> </div>
 								<div class="eachInput clear-fix">
-									<input type="text" name="fax" id="fax" class="input-txt input-toggle" title="Fax" value="" placeholder="<?php echo JText::_('FAX');?>">
+									<input type="text" name="fax" id="fax" class="input-txt" title="Fax" value="" placeholder="<?php echo JText::_('FAX');?>">
 								</div>
 								<div class="eachInput clear-fix">
-									<input type="text" name="email" id="email" class="input-txt input-toggle" title="E-mail" value="" placeholder="<?php echo JText::_('EMAIL');?>">
+									<input type="text" name="email" id="email" class="input-txt required validate-email" title="E-mail" value="" placeholder="<?php echo JText::_('EMAIL');?>">
 									<span class="red span-input">*</span> </div>
 								<p><?php echo JText::_('FILL_OUT');?></p>
 							</div>
@@ -101,9 +102,10 @@ defined('_JEXEC') or die;
 							<div class="clear"></div>
 							<label><?php echo JText::_('COMMENTS');?></label>
 							<textarea name="message" id="message"></textarea>
-							<div class="contact-submit clear-fix"> <a onclick="click_send()" id="" class="btnSend" href="javascript:void(0)">Send</a>
-								<input type="submit" style="display: none" value="Send" id="send" name="send">
-								<input type="reset" value="<?php echo JText::_('RESET');?>" id="" class="btnReset">
+							<div class="contact-submit clear-fix">
+								<!--<a onclick="click_send()" id="" class="btnSend" href="javascript:void(0)">Send</a>-->
+								<input type="submit" style="cursor:pointer;" value="Send" id="send" name="send" class="btnSend validate">
+								<input type="reset" value="<?php echo JText::_('RESET');?>" class="btnReset">
 							</div>
 							<input type="hidden" name="option" value="com_contact" />
 							<input type="hidden" name="task" value="contact.submit" />
