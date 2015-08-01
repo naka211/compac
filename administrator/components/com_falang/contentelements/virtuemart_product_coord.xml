@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" ?>
+<falang type="contentelement">
+  <name>Virtuemart:ProductCoordinate</name>
+	<author>T.Trung</author>
+  <version>1.0</version>
+  <description>Definition for the product coordinate</description>
+  <reference>
+  	<table name="virtuemart_product_coord">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="description" translate="0">Title</field>
+  		<field type="textarea" name="description" translate="1">Description</field>
+  	</table>
+   </reference>
+</falang>

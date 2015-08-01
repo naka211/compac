@@ -43,6 +43,15 @@ $langTag = JFactory::getLanguage()->getTag();
 <script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery.cycle.all.js"></script>
 <script type="text/javascript" src="<?php echo $tmpl;?>src/js/jquery.inputToggle.js"></script>
 <script type="text/javascript" src="<?php echo $tmpl;?>src/js/init.js"></script>
+<script type="text/javascript" src="<?php echo $tmpl; ?>fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="<?php echo $tmpl; ?>fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<link rel="stylesheet" type="text/css" href="<?php echo $tmpl; ?>fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script>
+jQuery(document).ready(function() {
+	jQuery("a.fancybox").fancybox();
+});
+</script>
 <script type="text/javascript">
  
   var _gaq = _gaq || [];

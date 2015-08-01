@@ -8,7 +8,7 @@ JHTML::_('behavior.formvalidator');
 		<div class="content">
 			<div id="contact-page" class="template clear-fix">
 				<div class="heading clear-fix">
-					<h2><?php echo $this->contact->name; ?></h2>
+					<h2><?php echo JText::_('CONTACT'); ?></h2>
 				</div>
 				<div class="contact-wrapper clear-fix">
 					<div class="contact-left">
@@ -104,7 +104,7 @@ JHTML::_('behavior.formvalidator');
 							<textarea name="message" id="message"></textarea>
 							<div class="contact-submit clear-fix">
 								<!--<a onclick="click_send()" id="" class="btnSend" href="javascript:void(0)">Send</a>-->
-								<input type="submit" style="cursor:pointer;" value="Send" id="send" name="send" class="btnSend validate">
+								<input type="submit" style="cursor:pointer;" value="<?php echo JText::_('SEND');?>" id="send" name="send" class="btnSend validate">
 								<input type="reset" value="<?php echo JText::_('RESET');?>" class="btnReset">
 							</div>
 							<input type="hidden" name="option" value="com_contact" />

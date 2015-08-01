@@ -69,3 +69,7 @@
 	position:absolute;
 }
 .stick.actived{background-position: bottom left !important;}
+
+.prd-info {
+    margin: 20px 0;
+}

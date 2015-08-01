@@ -1,11 +1,15 @@
 <?php
 defined ('_JEXEC') or die('Restricted access');
+$categoryModel = VmModel::getModel('category');
+$children = $categoryModel->getChildCategoryList(1, $this->category->virtuemart_category_id);
 ?>
 <script language="javascript">
 jQuery(document).ready(function(){
 	accessDistribute = function(){
 		var access = prompt(jQuery("#promptContent").text());
-		location.href="<?php echo JURI::base();?>index.php?option=com_virtuemart&controller=virtuemart&task=accessDistribute&pass="+access;
+		if(access != null){
+			location.href="<?php echo JURI::base();?>index.php?option=com_virtuemart&controller=virtuemart&task=accessDistribute&pass="+access;
+		}
 	}
 });
 </script>
@@ -18,7 +22,7 @@ jQuery(document).ready(function(){
 					<h2><?php echo vmText::_($this->category->category_name); ?></h2>
 				</div>
 				<div class="list-product-wrapper clear-fix">
-					<?php foreach ($this->category->children as $category ) {
+					<?php foreach ($children as $category ) {
 					$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&layout=level2&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);
 					if($category->virtuemart_category_id == 18){
 						$caturl = "index.php?option=com_virtuemart&controller=virtuemart&task=downloadFile&file=wheels.pdf";

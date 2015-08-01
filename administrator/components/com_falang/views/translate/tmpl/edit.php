@@ -306,7 +306,7 @@ else {
 							$maxLength = ($field->MaxLength>0)?$field->MaxLength:60;
 							$value =  strlen($translationContent->value)>0? $translationContent->value:$field->originalValue;
 							?>
-							<input class="inputbox" readonly="yes" type="text" name="refField_<?php echo $field->Name;?>" size="<?php echo $length;?>" value="<?php echo $value; ?>" maxlength="<?php echo $maxLength;?>"/>
+							<input class="inputbox" readonly type="text" name="refField_<?php echo $field->Name;?>" size="<?php echo $length;?>" value="<?php echo $value; ?>" maxlength="<?php echo $maxLength;?>"/>
 							<?php
 						}
 						?>

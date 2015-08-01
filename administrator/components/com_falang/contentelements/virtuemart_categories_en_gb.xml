@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" ?>
+<falang type="contentelement">
+  <name>Virtuemart:Category</name>
+	<author>T.Trung</author>
+  <version>1.0</version>
+  <description>Definition for the category</description>
+  <reference>
+  	<table name="virtuemart_categories_en_gb">
+  		<field type="referenceid" name="virtuemart_category_id" translate="0">ID</field>
+  		<field type="titletext" name="category_name" translate="0">Title</field>
+  		<field type="text" name="category_name" translate="1">Category name</field>
+  	</table>
+   </reference>
+</falang>
