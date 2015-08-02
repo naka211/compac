@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2015 at 09:09 PM
+-- Generation Time: Aug 02, 2015 at 01:18 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -220,16 +220,16 @@ INSERT INTO `k3n91_banners` (`id`, `cid`, `type`, `name`, `alias`, `imptotal`, `
 (6, 1, 0, 'Joomla! Shop', 'joomla-shop', 0, 44, 0, 'http://shop.joomla.org', -2, 14, '', '<a href="{CLICKURL}" target="_blank">{NAME}</a>\r\n<br/>\r\nFor all your Joomla! merchandise.', 0, 4, '', '{}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '0000-00-00 00:00:00', 0, 1),
 (7, 1, 0, 'Joomla! Promo Shop', 'joomla-promo-shop', 0, 38, 1, 'http://shop.joomla.org', -2, 33, '', '', 0, 3, '', '{"imageurl":"images\\/banners\\/shop-ad.jpg"}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '0000-00-00 00:00:00', 0, 1),
 (8, 1, 0, 'Joomla! Promo Books', 'joomla-promo-books', 0, 37, 0, 'http://shop.joomla.org/amazoncom-bookstores.html', -2, 33, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/shop-ad-books.jpg"}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '0000-00-00 00:00:00', 0, 1),
-(9, 0, 0, '2T-77 Live', '2t-77-live', 0, 246, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=781&view=3&category_id=31', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/2t-77 low a.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:26:09', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:12', 547, 2),
-(11, 0, 0, 'WRC Rally', 'wrc-rally', 0, 246, 0, '', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/wrc rally.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:20', 547, 2),
-(12, 0, 0, 'Messe 2T-77', 'messe-2t-77', 0, 246, 0, '', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/messe 2t-77.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:08', 547, 2),
-(13, 0, 0, 'A5816-C', 'a5816-c', 0, 246, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=226&view=3&category_id=37&Itemid=&lang=en', 1, 3, '', '', 0, 3, '', '{"imageurl":"images\\/banners\\/a5816-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:51', 547, 2),
-(14, 0, 0, '2T-C Live', '2t-c-live', 0, 246, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=192&view=3&category_id=31', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/2t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:27', 547, 2),
-(15, 0, 0, 'WD1500 Live', 'wd1500-live', 0, 246, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=205&view=3&category_id=39', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/wd1500.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:15', 547, 2),
-(16, 0, 0, '10T-C Live', '10t-c-live', 0, 246, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=200&view=3&category_id=34', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/10t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:25:55', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:25:59', 547, 2),
-(17, 0, 0, 'EP Live', 'ep-live', 0, 246, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=250&view=3&category_id=54', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/ep.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:03', 547, 2),
-(18, 0, 0, 'CSC moveable', 'csc-moveable', 0, 246, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=219&view=3&category_id=49', 1, 3, '', '', 0, 5, '', '{"imageurl":"images\\/banners\\/csc.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:56', 547, 2),
-(19, 0, 0, 'A4020-C', 'a4020-c', 0, 246, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=766&view=3&category_id=37', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/a4020-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:45', 547, 2);
+(9, 0, 0, '2T-77 Live', '2t-77-live', 0, 251, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=781&view=3&category_id=31', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/2t-77 low a.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:26:09', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:12', 547, 2),
+(11, 0, 0, 'WRC Rally', 'wrc-rally', 0, 251, 0, '', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/wrc rally.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:20', 547, 2),
+(12, 0, 0, 'Messe 2T-77', 'messe-2t-77', 0, 251, 0, '', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/messe 2t-77.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:08', 547, 2),
+(13, 0, 0, 'A5816-C', 'a5816-c', 0, 251, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=226&view=3&category_id=37&Itemid=&lang=en', 1, 3, '', '', 0, 3, '', '{"imageurl":"images\\/banners\\/a5816-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:51', 547, 2),
+(14, 0, 0, '2T-C Live', '2t-c-live', 0, 251, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=192&view=3&category_id=31', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/2t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:27', 547, 2),
+(15, 0, 0, 'WD1500 Live', 'wd1500-live', 0, 251, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=205&view=3&category_id=39', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/wd1500.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:15', 547, 2),
+(16, 0, 0, '10T-C Live', '10t-c-live', 0, 251, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=200&view=3&category_id=34', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/10t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:25:55', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:25:59', 547, 2),
+(17, 0, 0, 'EP Live', 'ep-live', 0, 251, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=250&view=3&category_id=54', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/ep.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:03', 547, 2),
+(18, 0, 0, 'CSC moveable', 'csc-moveable', 0, 251, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=219&view=3&category_id=49', 1, 3, '', '', 0, 5, '', '{"imageurl":"images\\/banners\\/csc.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:56', 547, 2),
+(19, 0, 0, 'A4020-C', 'a4020-c', 0, 251, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=766&view=3&category_id=37', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/a4020-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:45', 547, 2);
 
 -- --------------------------------------------------------
 
@@ -946,7 +946,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_falang_content` (
   KEY `language_id` (`language_id`),
   KEY `reference_table` (`reference_table`),
   KEY `reference_field` (`reference_field`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=814 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=924 ;
 
 --
 -- Dumping data for table `k3n91_falang_content`
@@ -1768,7 +1768,117 @@ INSERT INTO `k3n91_falang_content` (`id`, `language_id`, `reference_id`, `refere
 (810, 7, 124, 'virtuemart_categories_en_gb', 'category_name', 'Utgångna modeller', 'b5f31576952180bb519c350728c7dd55', 'Old Models', '2015-08-01 19:03:50', 547, 1),
 (811, 7, 129, 'virtuemart_categories_en_gb', 'category_name', 'Utgångna modeller', '68f2dbacc0803fca89805195d4449857', 'OLD MODELS', '2015-08-01 19:03:55', 547, 1),
 (812, 7, 134, 'virtuemart_categories_en_gb', 'category_name', 'Utgångna modeller', '68f2dbacc0803fca89805195d4449857', 'OLD MODELS', '2015-08-01 19:04:01', 547, 1),
-(813, 7, 138, 'virtuemart_categories_en_gb', 'category_name', 'Utgångna modeller', 'b5f31576952180bb519c350728c7dd55', 'Old Models', '2015-08-01 19:04:07', 547, 1);
+(813, 7, 138, 'virtuemart_categories_en_gb', 'category_name', 'Utgångna modeller', 'b5f31576952180bb519c350728c7dd55', 'Old Models', '2015-08-01 19:04:07', 547, 1),
+(814, 2, 125, 'virtuemart_categories_en_gb', 'category_name', 'Problem løsning Lufthydrauliske donkrafte', '41a1762282048cf458a2c201ae4d8e93', 'Air hydraulic jacks trouble shooting', '2015-08-02 04:20:25', 547, 1),
+(815, 2, 67, 'virtuemart_categories_en_gb', 'category_name', '3 års garanti. Vilkår og betingelser', '690a780f0696aac87dfbdf8060b5644c', '3-year warranty. Terms and conditions.', '2015-08-02 04:20:39', 547, 1),
+(816, 3, 125, 'virtuemart_categories_en_gb', 'category_name', 'Lufthydraulische Heber Fehlersuche', '41a1762282048cf458a2c201ae4d8e93', 'Air hydraulic jacks trouble shooting', '2015-08-02 04:21:00', 547, 1),
+(817, 3, 67, 'virtuemart_categories_en_gb', 'category_name', '3-Jahren Garantie. Garantiebedingungen.', '690a780f0696aac87dfbdf8060b5644c', '3-year warranty. Terms and conditions.', '2015-08-02 04:21:13', 547, 1),
+(818, 4, 125, 'virtuemart_categories_en_gb', 'category_name', 'Diagnostic de pannes - Crics oléopneumatiques', '41a1762282048cf458a2c201ae4d8e93', 'Air hydraulic jacks trouble shooting', '2015-08-02 04:21:30', 547, 1),
+(819, 4, 67, 'virtuemart_categories_en_gb', 'category_name', '3 ans de garantie.Termes et Conditions.', '690a780f0696aac87dfbdf8060b5644c', '3-year warranty. Terms and conditions.', '2015-08-02 04:21:43', 547, 1),
+(820, 5, 67, 'virtuemart_categories_en_gb', 'category_name', '3 Jaar Compac garantie. Condities en voorwaarden.', '690a780f0696aac87dfbdf8060b5644c', '3-year warranty. Terms and conditions.', '2015-08-02 04:22:25', 547, 1),
+(821, 6, 67, 'virtuemart_categories_en_gb', 'category_name', 'Garanzia da 3 anni. Termini e condizioni', '690a780f0696aac87dfbdf8060b5644c', '3-year warranty. Terms and conditions.', '2015-08-02 04:22:56', 547, 1),
+(822, 7, 67, 'virtuemart_categories_en_gb', 'category_name', '3 års garanti. Allmänna villkor.', '690a780f0696aac87dfbdf8060b5644c', '3-year warranty. Terms and conditions.', '2015-08-02 04:23:28', 547, 1),
+(823, 8, 125, 'virtuemart_categories_en_gb', 'category_name', 'Гидропневматические домкраты - Устранение неисправностей', '41a1762282048cf458a2c201ae4d8e93', 'Air hydraulic jacks trouble shooting', '2015-08-02 04:23:57', 547, 1),
+(824, 2, 64, 'virtuemart_categories_en_gb', 'category_name', 'Katalog Nr. 9', '3893bf2235db35e1a8d7640fe75c5009', 'Catalogue No 9e', '2015-08-02 04:27:01', 547, 1),
+(825, 2, 26, 'virtuemart_categories_en_gb', 'category_name', 'Problem løsning Donkrafte', 'c7cb35dbe1cf787ff53da21f588da43e', 'Jacks Trouble shooting', '2015-08-02 04:27:17', 547, 1),
+(826, 2, 126, 'virtuemart_categories_en_gb', 'category_name', 'Problem løsning CSC', '1048fa6a4f37d701d6adcb1e4271f4fa', 'CSC trouble shooting', '2015-08-02 04:27:31', 547, 1),
+(827, 3, 64, 'virtuemart_categories_en_gb', 'category_name', 'Katalog Nr. 9', '3893bf2235db35e1a8d7640fe75c5009', 'Catalogue No 9e', '2015-08-02 04:27:47', 547, 1),
+(828, 3, 26, 'virtuemart_categories_en_gb', 'category_name', 'Rangierheber Fehlersuche', 'c7cb35dbe1cf787ff53da21f588da43e', 'Jacks Trouble shooting', '2015-08-02 04:28:00', 547, 1),
+(829, 3, 126, 'virtuemart_categories_en_gb', 'category_name', 'CSC Fehlersuche', '1048fa6a4f37d701d6adcb1e4271f4fa', 'CSC trouble shooting', '2015-08-02 04:28:10', 547, 1),
+(830, 4, 26, 'virtuemart_categories_en_gb', 'category_name', 'Diagnostic de pannes - Crics', 'c7cb35dbe1cf787ff53da21f588da43e', 'Jacks Trouble shooting', '2015-08-02 04:28:37', 547, 1),
+(831, 4, 126, 'virtuemart_categories_en_gb', 'category_name', 'Diagnostic de pannes - CSC', '1048fa6a4f37d701d6adcb1e4271f4fa', 'CSC trouble shooting', '2015-08-02 04:28:49', 547, 1),
+(832, 5, 64, 'virtuemart_categories_en_gb', 'category_name', 'Catalogus nr. 9', '3893bf2235db35e1a8d7640fe75c5009', 'Catalogue No 9e', '2015-08-02 04:29:06', 547, 1),
+(833, 6, 64, 'virtuemart_categories_en_gb', 'category_name', 'Catalogo nr 9', '3893bf2235db35e1a8d7640fe75c5009', 'Catalogue No 9e', '2015-08-02 04:29:43', 547, 1),
+(834, 7, 64, 'virtuemart_categories_en_gb', 'category_name', 'Katalog Nr. 9', '3893bf2235db35e1a8d7640fe75c5009', 'Catalogue No 9e', '2015-08-02 04:30:02', 547, 1),
+(835, 7, 26, 'virtuemart_categories_en_gb', 'category_name', 'Domkrafte Problem lösning', 'c7cb35dbe1cf787ff53da21f588da43e', 'Jacks Trouble shooting', '2015-08-02 04:30:13', 547, 1),
+(836, 7, 126, 'virtuemart_categories_en_gb', 'category_name', 'CSC Problem lösning', '1048fa6a4f37d701d6adcb1e4271f4fa', 'CSC trouble shooting', '2015-08-02 04:30:24', 547, 1),
+(837, 8, 64, 'virtuemart_categories_en_gb', 'category_name', 'каталог ﻿Compac﻿ № 9', '3893bf2235db35e1a8d7640fe75c5009', 'Catalogue No 9e', '2015-08-02 04:30:46', 547, 1),
+(838, 8, 26, 'virtuemart_categories_en_gb', 'category_name', 'домкраты - Устранение неисправностей', 'c7cb35dbe1cf787ff53da21f588da43e', 'Jacks Trouble shooting', '2015-08-02 04:30:55', 547, 1),
+(839, 8, 126, 'virtuemart_categories_en_gb', 'category_name', 'CSC - Устранение неисправностей', '1048fa6a4f37d701d6adcb1e4271f4fa', 'CSC trouble shooting', '2015-08-02 04:31:07', 547, 1),
+(840, 2, 66, 'virtuemart_categories_en_gb', 'category_name', 'Problem løsning Presser', '229afde6e94637eafe9b2ad09bf0a475', 'Press Trouble shooting', '2015-08-02 04:33:21', 547, 1),
+(841, 2, 60, 'virtuemart_categories_en_gb', 'category_name', 'Problem løsning Gearkasseløfter', '6f8712ebbadcd31bbe6eeb4bb1a06730', 'Transmissions Jacks trouble shooting', '2015-08-02 04:33:41', 547, 1),
+(842, 2, 68, 'virtuemart_categories_en_gb', 'category_name', 'Transport info', 'a600971fdd23ea1f5685d7ee01d5f5c3', 'Transportation', '2015-08-02 04:33:54', 547, 1),
+(843, 2, 65, 'virtuemart_categories_en_gb', 'category_name', 'Problem løsning Hjulløftere', 'daee6f780007aa390eca498cb58c200b', 'Wheel dolly trouble shooting', '2015-08-02 04:34:30', 547, 1),
+(844, 3, 66, 'virtuemart_categories_en_gb', 'category_name', 'Presse Fehlersuche', '229afde6e94637eafe9b2ad09bf0a475', 'Press Trouble shooting', '2015-08-02 04:34:53', 547, 1),
+(845, 3, 60, 'virtuemart_categories_en_gb', 'category_name', 'Getriebeheber Fehlersuche', '6f8712ebbadcd31bbe6eeb4bb1a06730', 'Transmissions Jacks trouble shooting', '2015-08-02 04:35:14', 547, 1),
+(846, 3, 68, 'virtuemart_categories_en_gb', 'category_name', 'Transport', 'a600971fdd23ea1f5685d7ee01d5f5c3', 'Transportation', '2015-08-02 04:35:32', 547, 1),
+(847, 3, 65, 'virtuemart_categories_en_gb', 'category_name', 'Radmontagegerät Fehlersuche', 'daee6f780007aa390eca498cb58c200b', 'Wheel dolly trouble shooting', '2015-08-02 04:35:46', 547, 1),
+(848, 4, 66, 'virtuemart_categories_en_gb', 'category_name', 'Diagnostic de pannes - Presses', '229afde6e94637eafe9b2ad09bf0a475', 'Press Trouble shooting', '2015-08-02 04:36:49', 547, 1),
+(849, 4, 60, 'virtuemart_categories_en_gb', 'category_name', 'Diagnostic de pannes - Crics pour boîtes de vitesses', '6f8712ebbadcd31bbe6eeb4bb1a06730', 'Transmissions Jacks trouble shooting', '2015-08-02 04:37:04', 547, 1),
+(850, 4, 68, 'virtuemart_categories_en_gb', 'category_name', 'Transports', 'a600971fdd23ea1f5685d7ee01d5f5c3', 'Transportation', '2015-08-02 04:37:17', 547, 1),
+(851, 4, 65, 'virtuemart_categories_en_gb', 'category_name', 'Diagnostic de pannes - Élévateur de roues', 'daee6f780007aa390eca498cb58c200b', 'Wheel dolly trouble shooting', '2015-08-02 04:37:29', 547, 1),
+(852, 6, 68, 'virtuemart_categories_en_gb', 'category_name', 'Trasporti', 'a600971fdd23ea1f5685d7ee01d5f5c3', 'Transportation', '2015-08-02 04:38:25', 547, 1),
+(853, 7, 66, 'virtuemart_categories_en_gb', 'category_name', 'Pressar Problem lösning', '229afde6e94637eafe9b2ad09bf0a475', 'Press Trouble shooting', '2015-08-02 04:38:50', 547, 1),
+(854, 7, 60, 'virtuemart_categories_en_gb', 'category_name', 'Växellådslyftar Problem lösning', '6f8712ebbadcd31bbe6eeb4bb1a06730', 'Transmissions Jacks trouble shooting', '2015-08-02 04:39:11', 547, 1),
+(855, 7, 68, 'virtuemart_categories_en_gb', 'category_name', 'Transport', 'a600971fdd23ea1f5685d7ee01d5f5c3', 'Transportation', '2015-08-02 04:39:22', 547, 1),
+(856, 7, 65, 'virtuemart_categories_en_gb', 'category_name', 'Hjullyftar Problem lösning', 'daee6f780007aa390eca498cb58c200b', 'Wheel dolly trouble shooting', '2015-08-02 04:39:57', 547, 1),
+(857, 8, 66, 'virtuemart_categories_en_gb', 'category_name', 'Пресса - Устранение неисправностей', '229afde6e94637eafe9b2ad09bf0a475', 'Press Trouble shooting', '2015-08-02 04:40:19', 547, 1),
+(858, 8, 60, 'virtuemart_categories_en_gb', 'category_name', 'Универсальные трансмиссионные стойки - Устранение неисправностей', '6f8712ebbadcd31bbe6eeb4bb1a06730', 'Transmissions Jacks trouble shooting', '2015-08-02 04:40:31', 547, 1),
+(859, 8, 68, 'virtuemart_categories_en_gb', 'category_name', 'Транспорт', 'a600971fdd23ea1f5685d7ee01d5f5c3', 'Transportation', '2015-08-02 04:40:43', 547, 1),
+(860, 8, 65, 'virtuemart_categories_en_gb', 'category_name', 'Тележки для транспортировкм - Устранение неисправностей', 'daee6f780007aa390eca498cb58c200b', 'Wheel dolly trouble shooting', '2015-08-02 04:40:56', 547, 1),
+(861, 2, 58, 'virtuemart_categories_en_gb', 'category_name', 'Flaskedonkrafte', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:50:22', 547, 1),
+(862, 2, 59, 'virtuemart_categories_en_gb', 'category_name', 'Flaskedonkrafte', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:50:29', 547, 1),
+(863, 3, 58, 'virtuemart_categories_en_gb', 'category_name', 'Unterstellheber', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:50:49', 547, 1),
+(864, 3, 59, 'virtuemart_categories_en_gb', 'category_name', 'Unterstellheber', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:50:54', 547, 1),
+(865, 4, 58, 'virtuemart_categories_en_gb', 'category_name', 'Crics bouteille', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:51:19', 547, 1),
+(866, 4, 59, 'virtuemart_categories_en_gb', 'category_name', 'Crics bouteille', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:51:25', 547, 1),
+(867, 5, 58, 'virtuemart_categories_en_gb', 'category_name', 'Potkriks', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:51:42', 547, 1),
+(868, 5, 59, 'virtuemart_categories_en_gb', 'category_name', 'Potkriks', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:51:48', 547, 1),
+(869, 6, 58, 'virtuemart_categories_en_gb', 'category_name', 'Cricchi a bottiglia', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:52:06', 547, 1),
+(870, 6, 59, 'virtuemart_categories_en_gb', 'category_name', 'Cricchi a bottiglia', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:52:13', 547, 1),
+(871, 7, 58, 'virtuemart_categories_en_gb', 'category_name', 'Pelardomkrafter', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:52:32', 547, 1),
+(872, 7, 59, 'virtuemart_categories_en_gb', 'category_name', 'Pelardomkrafter', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:52:37', 547, 1),
+(873, 8, 58, 'virtuemart_categories_en_gb', 'category_name', 'Бутылочные домкраты', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:53:16', 547, 1),
+(874, 8, 59, 'virtuemart_categories_en_gb', 'category_name', 'Бутылочные домкраты', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:53:22', 547, 1),
+(875, 9, 58, 'virtuemart_categories_en_gb', 'category_name', 'Podnośniki butelkowe', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:53:38', 547, 1),
+(876, 9, 59, 'virtuemart_categories_en_gb', 'category_name', 'Podnośniki butelkowe', 'c2a8cb59bbc2da8bd50ff58010e82a40', 'Bottle jacks', '2015-08-02 10:53:44', 547, 1),
+(877, 2, 54, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydrauliske', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 10:55:28', 547, 1),
+(878, 2, 31, 'virtuemart_categories_en_gb', 'category_name', 'Donkrafte 1,5 - 3 Tons', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 10:55:42', 547, 1),
+(879, 2, 34, 'virtuemart_categories_en_gb', 'category_name', 'Donkrafte 4 - 20 Tons', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 10:55:58', 547, 1),
+(880, 3, 54, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydraulische', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 10:57:10', 547, 1),
+(881, 3, 31, 'virtuemart_categories_en_gb', 'category_name', 'Rangierheber 1,5 - 3 Ton', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 10:57:26', 547, 1),
+(882, 3, 34, 'virtuemart_categories_en_gb', 'category_name', 'Rangierheber 4 - 20 Ton', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 10:57:40', 547, 1),
+(883, 4, 54, 'virtuemart_categories_en_gb', 'category_name', 'Électro-hydrauliques', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 10:58:04', 547, 1),
+(884, 4, 31, 'virtuemart_categories_en_gb', 'category_name', 'Crics 1,5 - 3 ton', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 10:58:22', 547, 1),
+(885, 4, 34, 'virtuemart_categories_en_gb', 'category_name', 'Crics 4 - 20 ton', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 10:58:37', 547, 1),
+(886, 5, 54, 'virtuemart_categories_en_gb', 'category_name', 'Elektrohydraulische', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 10:59:05', 547, 1),
+(887, 5, 31, 'virtuemart_categories_en_gb', 'category_name', 'Kriks 1,5 - 3 Ton', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 10:59:16', 547, 1),
+(888, 5, 34, 'virtuemart_categories_en_gb', 'category_name', 'Kriks 4 - 20 Ton', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 10:59:27', 547, 1),
+(889, 6, 31, 'virtuemart_categories_en_gb', 'category_name', 'Cric 1,5 - 3 Ton', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 11:00:04', 547, 1),
+(890, 6, 34, 'virtuemart_categories_en_gb', 'category_name', 'Cric 4 - 20 Ton', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 11:00:16', 547, 1),
+(891, 7, 54, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydrauliska', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 11:00:37', 547, 1),
+(892, 7, 31, 'virtuemart_categories_en_gb', 'category_name', 'Domkrafte 1,5 - 3 Tons', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 11:00:49', 547, 1),
+(893, 7, 34, 'virtuemart_categories_en_gb', 'category_name', 'Domkrafte 4 -20 Tons', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 11:01:01', 547, 1),
+(894, 8, 54, 'virtuemart_categories_en_gb', 'category_name', 'Электрогидравлические', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 11:01:25', 547, 1),
+(895, 8, 31, 'virtuemart_categories_en_gb', 'category_name', 'домкраты 1,5 - 3 Ton', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 11:01:38', 547, 1),
+(896, 8, 34, 'virtuemart_categories_en_gb', 'category_name', 'домкраты 4 - 20 Ton', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 11:01:50', 547, 1),
+(897, 9, 54, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydrauliczna', 'faead0381646361f22fb140a8bb0b68e', 'Electro-hydraulic', '2015-08-02 11:03:51', 547, 1),
+(898, 9, 31, 'virtuemart_categories_en_gb', 'category_name', 'Podnośniki 1,5 - 3 Tony', 'c337997c1affbbb17d89af69fef5a58d', 'Jacks 1,5 - 3 ton', '2015-08-02 11:04:02', 547, 1),
+(899, 9, 34, 'virtuemart_categories_en_gb', 'category_name', 'Podnośniki 4 - 20 Tony', '6304ee9977e966a45b217037298f2180', 'Jacks 4 - 20 ton', '2015-08-02 11:04:16', 547, 1),
+(900, 2, 32, 'virtuemart_categories_en_gb', 'category_name', '2 - 3 Tons', 'eb7bf5854eb2d3daa13a34c7f6677b77', '2 - 3 ton', '2015-08-02 11:07:04', 547, 1),
+(901, 3, 32, 'virtuemart_categories_en_gb', 'category_name', '2 - 3 Ton', 'eb7bf5854eb2d3daa13a34c7f6677b77', '2 - 3 ton', '2015-08-02 11:07:21', 547, 1),
+(902, 7, 32, 'virtuemart_categories_en_gb', 'category_name', '2 - 3 Tons', 'eb7bf5854eb2d3daa13a34c7f6677b77', '2 - 3 ton', '2015-08-02 11:07:48', 547, 1),
+(903, 9, 32, 'virtuemart_categories_en_gb', 'category_name', '2 - 3 Tony', 'eb7bf5854eb2d3daa13a34c7f6677b77', '2 - 3 ton', '2015-08-02 11:08:06', 547, 1),
+(904, 2, 33, 'virtuemart_categories_en_gb', 'category_name', 'Højtløftende donkrafte 1,5 - 3 Tons', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:08:38', 547, 1),
+(905, 3, 33, 'virtuemart_categories_en_gb', 'category_name', 'Hochheber 1,5 - 3 Ton', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:09:09', 547, 1),
+(906, 4, 33, 'virtuemart_categories_en_gb', 'category_name', 'Crics à haute levée 1,5 - 3 ton', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:09:27', 547, 1),
+(907, 5, 33, 'virtuemart_categories_en_gb', 'category_name', 'Hooglichters 1,5 - 3 Ton', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:09:43', 547, 1),
+(908, 6, 33, 'virtuemart_categories_en_gb', 'category_name', 'Cric grande alzata 1,5 - 3 Ton', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:10:00', 547, 1),
+(909, 7, 33, 'virtuemart_categories_en_gb', 'category_name', 'Höglyftande domkrafter 1,5 - 3 Tons', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:10:16', 547, 1),
+(910, 8, 33, 'virtuemart_categories_en_gb', 'category_name', 'Домкраты с увеличенной высотой подъема 1,5 - 3 Ton', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:10:33', 547, 1),
+(911, 9, 33, 'virtuemart_categories_en_gb', 'category_name', 'Podnośniki do dużych Akcesoria 1,5 - 3 Tony', '96d4819816c792a4beda15b16931e751', 'High lift jacks 1,5 - 3 ton', '2015-08-02 11:10:50', 547, 1),
+(912, 2, 35, 'virtuemart_categories_en_gb', 'category_name', '4 - 20 Tons', '09bd6967b091aba7329f0b131da97e0f', '4 - 20 ton', '2015-08-02 11:11:38', 547, 1),
+(913, 3, 35, 'virtuemart_categories_en_gb', 'category_name', '4 - 20 Ton', '09bd6967b091aba7329f0b131da97e0f', '4 - 20 ton', '2015-08-02 11:11:55', 547, 1),
+(914, 7, 35, 'virtuemart_categories_en_gb', 'category_name', '4 - 20 Tons', '09bd6967b091aba7329f0b131da97e0f', '4 - 20 ton', '2015-08-02 11:12:15', 547, 1),
+(915, 9, 35, 'virtuemart_categories_en_gb', 'category_name', '4 - 20 Tony', '09bd6967b091aba7329f0b131da97e0f', '4 - 20 ton', '2015-08-02 11:12:36', 547, 1),
+(916, 2, 36, 'virtuemart_categories_en_gb', 'category_name', 'Højtløftende donkrafte 5 - 10 Tons', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:13:57', 547, 1),
+(917, 3, 36, 'virtuemart_categories_en_gb', 'category_name', 'Hochheber 5 - 10 Ton', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:14:19', 547, 1),
+(918, 4, 36, 'virtuemart_categories_en_gb', 'category_name', 'Crics à haute levée 5 - 10 ton', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:14:44', 547, 1),
+(919, 5, 36, 'virtuemart_categories_en_gb', 'category_name', 'Hooglichters 5 - 10 Ton', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:15:03', 547, 1),
+(920, 6, 36, 'virtuemart_categories_en_gb', 'category_name', 'Cric grande alzata 5 - 10 Ton', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:15:20', 547, 1),
+(921, 7, 36, 'virtuemart_categories_en_gb', 'category_name', 'Höglyftande domkrafter 5 - 10 Tons', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:15:36', 547, 1),
+(922, 8, 36, 'virtuemart_categories_en_gb', 'category_name', 'Домкраты с увеличенной высотой подъема 5 - 10 Ton', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:15:54', 547, 1),
+(923, 9, 36, 'virtuemart_categories_en_gb', 'category_name', 'Podnośniki do dużych Akcesoria 5 - 10 Tony', '1ad90ff550d39c0f69cd71e1037fed3a', 'High lift jacks 5 - 10 tons', '2015-08-02 11:16:11', 547, 1);
 
 -- --------------------------------------------------------
 
@@ -1781,23 +1891,23 @@ CREATE TABLE IF NOT EXISTS `k3n91_falang_tableinfo` (
   `joomlatablename` varchar(100) NOT NULL DEFAULT '',
   `tablepkID` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9681 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11801 ;
 
 --
 -- Dumping data for table `k3n91_falang_tableinfo`
 --
 
 INSERT INTO `k3n91_falang_tableinfo` (`id`, `joomlatablename`, `tablepkID`) VALUES
-(9671, 'banners', 'id'),
-(9672, 'categories', 'id'),
-(9673, 'contact_details', 'id'),
-(9674, 'content', 'id'),
-(9675, 'menu', 'id'),
-(9676, 'modules', 'id'),
-(9677, 'virtuemart_categories_en_gb', 'virtuemart_category_id'),
-(9678, 'virtuemart_product_coord', 'id'),
-(9679, 'virtuemart_products_en_gb', 'virtuemart_product_id'),
-(9680, 'weblinks', 'id');
+(11791, 'banners', 'id'),
+(11792, 'categories', 'id'),
+(11793, 'contact_details', 'id'),
+(11794, 'content', 'id'),
+(11795, 'menu', 'id'),
+(11796, 'modules', 'id'),
+(11797, 'virtuemart_categories_en_gb', 'virtuemart_category_id'),
+(11798, 'virtuemart_product_coord', 'id'),
+(11799, 'virtuemart_products_en_gb', 'virtuemart_product_id'),
+(11800, 'weblinks', 'id');
 
 -- --------------------------------------------------------
 
@@ -2880,8 +2990,8 @@ CREATE TABLE IF NOT EXISTS `k3n91_session` (
 --
 
 INSERT INTO `k3n91_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('5dtv098vr6qoobc22625atshd2', 1, 0, '1438455911', '__default|a:8:{s:15:"session.counter";i:1140;s:19:"session.timer.start";i:1438413046;s:18:"session.timer.last";i:1438455910;s:17:"session.timer.now";i:1438455911;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":9:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:14:"selected_catid";s:27:"virtuemart_categories_en_gb";s:13:"selected_lang";s:1:"7";s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:20;}}s:26:"view{com_falang}limitstart";s:2:"60";s:14:"com_virtuemart";O:8:"stdClass":2:{s:8:"category";O:8:"stdClass":4:{s:6:"search";s:3:"air";s:12:"filter_order";s:13:"category_name";s:16:"filter_order_Dir";s:4:"DESC";s:10:"limitstart";i:0;}s:7:"product";O:8:"stdClass":2:{s:16:"filter_order_Dir";s:4:"DESC";s:6:"filter";O:8:"stdClass":1:{s:22:"virtuemart_category_id";i:38;}}}s:22:"virtuemart_category_id";s:2:"38";s:10:"com_config";O:8:"stdClass":1:{s:6:"config";O:8:"stdClass":1:{s:6:"global";O:8:"stdClass":1:{s:4:"data";N;}}}s:11:"com_content";O:8:"stdClass":2:{s:8:"articles";O:8:"stdClass":3:{s:6:"filter";a:8:{s:6:"search";s:8:"password";s:9:"published";s:0:"";s:11:"category_id";s:0:"";s:6:"access";s:0:"";s:8:"language";s:0:"";s:3:"tag";s:0:"";s:9:"author_id";s:0:"";s:5:"level";s:0:"";}s:4:"list";a:2:{s:12:"fullordering";s:9:"a.id DESC";s:5:"limit";s:2:"20";}s:10:"limitstart";i:0;}s:4:"edit";O:8:"stdClass":1:{s:7:"article";O:8:"stdClass":2:{s:2:"id";a:0:{}s:4:"data";N;}}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"547";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:23:"trung@mywebcreations.dk";s:8:"password";s:60:"$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2015-07-17 10:31:47";s:13:"lastvisitDate";s:19:"2015-07-31 03:44:46";s:10:"activation";s:1:"0";s:6:"params";s:0:"";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:5:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:6;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"04a1c07a1e939d1941ba7a53abb9ce1c";}', 547, 'admin'),
-('f9v5tpfkp02j09t2gkcst4jes3', 0, 1, '1438455937', '__default|a:9:{s:15:"session.counter";i:8;s:19:"session.timer.start";i:1438455877;s:18:"session.timer.last";i:1438455936;s:17:"session.timer.now";i:1438455937;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"9";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:9;}s:14:"\\0\\0\\0_authLevels";a:3:{i:0;i:1;i:1;i:1;i:2;i:5;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:6:"notify";i:1;s:9:"accessDis";i:1;}__vm|a:4:{s:6:"manage";i:0;s:15:"vmlastvisItemid";i:1001;s:23:"vmlastvisitedcategoryid";i:20;s:19:"vmlastvisitedmanuid";i:-1;}', 0, '');
+('s42aemsk219npkac3dq5bnca23', 1, 0, '1438514172', '__default|a:8:{s:15:"session.counter";i:182;s:19:"session.timer.start";i:1438512561;s:18:"session.timer.last";i:1438514167;s:17:"session.timer.now";i:1438514171;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":5:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:14:"selected_catid";s:27:"virtuemart_categories_en_gb";s:13:"selected_lang";s:1:"9";s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:20;}}s:26:"view{com_falang}limitstart";s:2:"40";}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"547";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:23:"trung@mywebcreations.dk";s:8:"password";s:60:"$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2015-07-17 10:31:47";s:13:"lastvisitDate";s:19:"2015-08-02 03:29:53";s:10:"activation";s:1:"0";s:6:"params";s:0:"";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:5:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:6;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"453d78372fd647ee10ae81866a6291c0";}', 547, 'admin'),
+('te2454d7ursh0anptd0cnkuom2', 0, 1, '1438514279', '__default|a:9:{s:15:"session.counter";i:46;s:19:"session.timer.start";i:1438486204;s:18:"session.timer.last";i:1438514274;s:17:"session.timer.now";i:1438514279;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"9";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:9;}s:14:"\\0\\0\\0_authLevels";a:3:{i:0;i:1;i:1;i:1;i:2;i:5;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:6:"notify";i:1;s:9:"accessDis";i:1;}__vm|a:4:{s:6:"manage";i:0;s:15:"vmlastvisItemid";i:1002;s:23:"vmlastvisitedcategoryid";i:37;s:19:"vmlastvisitedmanuid";i:-1;}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3394,7 +3504,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_users` (
 --
 
 INSERT INTO `k3n91_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(547, 'Super User', 'admin', 'trung@mywebcreations.dk', '$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu', 0, 1, '2015-07-17 10:31:47', '2015-08-01 07:10:57', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
+(547, 'Super User', 'admin', 'trung@mywebcreations.dk', '$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu', 0, 1, '2015-07-17 10:31:47', '2015-08-02 10:49:25', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
 
 -- --------------------------------------------------------
 

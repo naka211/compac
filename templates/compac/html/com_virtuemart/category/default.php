@@ -2,6 +2,7 @@
 defined ('_JEXEC') or die('Restricted access');
 $categoryModel = VmModel::getModel('category');
 $children = $categoryModel->getChildCategoryList(1, $this->category->virtuemart_category_id);
+$session = JFactory::getSession();
 ?>
 <script language="javascript">
 jQuery(document).ready(function(){
@@ -40,13 +41,24 @@ jQuery(document).ready(function(){
 						<?php echo $category->images[0]->displayMediaFull("",false);?>
 						</a>
 					</div>
-					<?php } else {?>
+					<?php } else {
+						if($session->get('accessDis') != 1){
+					?>
 					<div class="prd-item">
 						<a href="javascript:void(0);" onClick="accessDistribute();"><span><?php echo vmText::_($category->category_name) ?></span>
 						<?php echo $category->images[0]->displayMediaFull("",false);?>
 						</a>
 					</div>
-					<?php }?>
+					<?php } else {
+						$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&layout=distributor&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);	
+					?>
+					<div class="prd-item">
+						<a href="<?php echo $caturl; ?>"><span><?php echo vmText::_($category->category_name) ?></span>
+						<?php echo $category->images[0]->displayMediaFull("",false);?>
+						</a>
+					</div>
+					<?php
+					}}?>
 					<?php }?>
 				</div>
 			</div>

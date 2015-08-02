@@ -96,7 +96,7 @@ class VirtueMartControllerVirtuemart extends JControllerLegacy
 		
 		if($pass == strip_tags($savedPass)){
 			$session->set('accessDis', 1);
-			$this->setRedirect("index.php?option=com_virtuemart&view=category&layout=documents&virtuemart_category_id=20&Itemid=1001");
+			$this->setRedirect("index.php?option=com_virtuemart&view=category&layout=distributor&virtuemart_category_id=20&Itemid=1001");
 		} else {
 			echo '<script>alert("Password is incorrect, please contact us."); history.back();</script>';
 		}
