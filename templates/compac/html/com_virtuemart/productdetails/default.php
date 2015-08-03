@@ -25,7 +25,7 @@ foreach($files as $file){
 
 $q = 
 $db->setQuery("SELECT * FROM #__virtuemart_product_coord WHERE product_id = ".(int)$this->product->virtuemart_product_id." ORDER BY `order` ASC");
-$coords = $db->loadObjectList();print_r($coords);exit;
+$coords = $db->loadObjectList();
 ?>
 <script type="text/javascript">
 	jQuery(document).ready(function(){

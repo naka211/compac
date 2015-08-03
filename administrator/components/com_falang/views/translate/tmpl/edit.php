@@ -390,7 +390,7 @@ else {
               </tr>
               <tr>
                 <td><strong><?php echo JText::_('COM_FALANG_TRANSLATE_TITLE_PUBLISHED')?>:</strong></td>
-                <td><input type="checkbox" name="published" value="1" <?php echo $this->actContentObject->published&0x0001 ? 'checked="checked"' : ''; ?> /></td>
+                <td><input type="checkbox" name="published" value="1" checked="checked" <?php echo $this->actContentObject->published&0x0001 ? 'checked="checked"' : ''; ?> /></td>
               </tr>
               <tr>
                 <td><strong><?php echo JText::_('COM_FALANG_TRANSLATE_TITLE_DATECHANGED');?>:</strong></td>
