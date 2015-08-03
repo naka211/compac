@@ -11,4 +11,7 @@
   		<field type="textarea" name="description" translate="1">Description</field>
   	</table>
    </reference>
+   <translationfilters>
+      <keyword>description</keyword>
+  </translationfilters>
 </falang>

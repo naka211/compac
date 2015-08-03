@@ -24,8 +24,8 @@ foreach($files as $file){
 }
 
 $q = 
-$db->setQuery("SELECT x, y, description FROM #__virtuemart_product_coord WHERE product_id = ".(int)$this->product->virtuemart_product_id." ORDER BY `order` ASC");
-$coords = $db->loadObjectList();
+$db->setQuery("SELECT * FROM #__virtuemart_product_coord WHERE product_id = ".(int)$this->product->virtuemart_product_id." ORDER BY `order` ASC");
+$coords = $db->loadObjectList();print_r($coords);exit;
 ?>
 <script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -105,7 +105,7 @@ $coords = $db->loadObjectList();
 						<div class="description">
 							<ul>
 								<?php for($i = 0; $i < count($coords); $i++){?>
-								<li id="des_<?php echo $i; ?>" class="clear-fix"><span><?php echo $i + 1; ?></span><p><?php echo $coords[$i]->description; ?></p></li>
+								<li id="des_<?php echo $i; ?>" class="clear-fix"><span><?php echo $i + 1; ?></span><p><?php echo vmText::_($coords[$i]->description); ?></p></li>
 								<?php }?>
 							</ul>
 						</div>

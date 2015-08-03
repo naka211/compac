@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.9
+-- version 4.0.4.1
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2015 at 08:17 AM
--- Server version: 5.6.14
--- PHP Version: 5.5.6
+-- Generation Time: Aug 03, 2015 at 02:39 PM
+-- Server version: 5.6.11
+-- PHP Version: 5.5.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `compac`
 --
+CREATE DATABASE IF NOT EXISTS `compac` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `compac`;
 
 -- --------------------------------------------------------
 
@@ -218,16 +220,16 @@ INSERT INTO `k3n91_banners` (`id`, `cid`, `type`, `name`, `alias`, `imptotal`, `
 (6, 1, 0, 'Joomla! Shop', 'joomla-shop', 0, 44, 0, 'http://shop.joomla.org', -2, 14, '', '<a href="{CLICKURL}" target="_blank">{NAME}</a>\r\n<br/>\r\nFor all your Joomla! merchandise.', 0, 4, '', '{}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '0000-00-00 00:00:00', 0, 1),
 (7, 1, 0, 'Joomla! Promo Shop', 'joomla-promo-shop', 0, 38, 1, 'http://shop.joomla.org', -2, 33, '', '', 0, 3, '', '{"imageurl":"images\\/banners\\/shop-ad.jpg"}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '0000-00-00 00:00:00', 0, 1),
 (8, 1, 0, 'Joomla! Promo Books', 'joomla-promo-books', 0, 37, 0, 'http://shop.joomla.org/amazoncom-bookstores.html', -2, 33, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/shop-ad-books.jpg"}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '0000-00-00 00:00:00', 0, 1),
-(9, 0, 0, '2T-77 Live', '2t-77-live', 0, 253, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=781&view=3&category_id=31', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/2t-77 low a.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:26:09', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:12', 547, 2),
-(11, 0, 0, 'WRC Rally', 'wrc-rally', 0, 253, 0, '', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/wrc rally.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:20', 547, 2),
-(12, 0, 0, 'Messe 2T-77', 'messe-2t-77', 0, 253, 0, '', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/messe 2t-77.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:08', 547, 2),
-(13, 0, 0, 'A5816-C', 'a5816-c', 0, 253, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=226&view=3&category_id=37&Itemid=&lang=en', 1, 3, '', '', 0, 3, '', '{"imageurl":"images\\/banners\\/a5816-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:51', 547, 2),
-(14, 0, 0, '2T-C Live', '2t-c-live', 0, 253, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=192&view=3&category_id=31', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/2t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:27', 547, 2),
-(15, 0, 0, 'WD1500 Live', 'wd1500-live', 0, 253, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=205&view=3&category_id=39', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/wd1500.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:15', 547, 2),
-(16, 0, 0, '10T-C Live', '10t-c-live', 0, 253, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=200&view=3&category_id=34', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/10t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:25:55', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:25:59', 547, 2),
-(17, 0, 0, 'EP Live', 'ep-live', 0, 253, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=250&view=3&category_id=54', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/ep.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:03', 547, 2),
-(18, 0, 0, 'CSC moveable', 'csc-moveable', 0, 253, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=219&view=3&category_id=49', 1, 3, '', '', 0, 5, '', '{"imageurl":"images\\/banners\\/csc.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:56', 547, 2),
-(19, 0, 0, 'A4020-C', 'a4020-c', 0, 253, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=766&view=3&category_id=37', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/a4020-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:45', 547, 2);
+(9, 0, 0, '2T-77 Live', '2t-77-live', 0, 257, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=781&view=3&category_id=31', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/2t-77 low a.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:26:09', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:12', 547, 2),
+(11, 0, 0, 'WRC Rally', 'wrc-rally', 0, 257, 0, '', 1, 3, '', '', 0, 1, '', '{"imageurl":"images\\/banners\\/wrc rally.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:20', 547, 2),
+(12, 0, 0, 'Messe 2T-77', 'messe-2t-77', 0, 257, 0, '', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/messe 2t-77.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:08', 547, 2),
+(13, 0, 0, 'A5816-C', 'a5816-c', 0, 257, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=226&view=3&category_id=37&Itemid=&lang=en', 1, 3, '', '', 0, 3, '', '{"imageurl":"images\\/banners\\/a5816-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:51', 547, 2),
+(14, 0, 0, '2T-C Live', '2t-c-live', 0, 257, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=192&view=3&category_id=31', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/2t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:27', 547, 2),
+(15, 0, 0, 'WD1500 Live', 'wd1500-live', 0, 257, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=205&view=3&category_id=39', 1, 3, '', '', 0, 2, '', '{"imageurl":"images\\/banners\\/wd1500.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:15', 547, 2),
+(16, 0, 0, '10T-C Live', '10t-c-live', 0, 257, 1, 'http://compac.dk/index.php?option=com_products&mid=4&id=200&view=3&category_id=34', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/10t-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '2015-07-23 16:25:55', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:25:59', 547, 2),
+(17, 0, 0, 'EP Live', 'ep-live', 0, 257, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=250&view=3&category_id=54', 1, 3, '', '', 0, 4, '', '{"imageurl":"images\\/banners\\/ep.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:27:03', 547, 2),
+(18, 0, 0, 'CSC moveable', 'csc-moveable', 0, 257, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=219&view=3&category_id=49', 1, 3, '', '', 0, 5, '', '{"imageurl":"images\\/banners\\/csc.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:56', 547, 2),
+(19, 0, 0, 'A4020-C', 'a4020-c', 0, 257, 0, 'http://compac.dk/index.php?option=com_products&mid=4&id=766&view=3&category_id=37', 1, 3, '', '', 0, 7, '', '{"imageurl":"images\\/banners\\/a4020-c.jpg","width":"","height":"","alt":""}', 0, '', -1, -1, -1, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '*', 0, '', '2015-07-24 09:26:45', 547, 2);
 
 -- --------------------------------------------------------
 
@@ -944,7 +946,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_falang_content` (
   KEY `language_id` (`language_id`),
   KEY `reference_table` (`reference_table`),
   KEY `reference_field` (`reference_field`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=968 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1005 ;
 
 --
 -- Dumping data for table `k3n91_falang_content`
@@ -1921,7 +1923,44 @@ INSERT INTO `k3n91_falang_content` (`id`, `language_id`, `reference_id`, `refere
 (964, 5, 55, 'virtuemart_categories_en_gb', 'category_name', 'Elektrohydraulische werkplaatspersen 40 - 100 Ton', '4fb95b4653727e1b0240c8e1f5b196ab', 'Electro-hydraulic workshop presses 40 - 100 ton', '2015-08-02 15:58:48', 547, 1),
 (965, 7, 55, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydrauliska verkstadspressar 40 - 100 Tons', '4fb95b4653727e1b0240c8e1f5b196ab', 'Electro-hydraulic workshop presses 40 - 100 ton', '2015-08-02 15:59:09', 547, 1),
 (966, 8, 55, 'virtuemart_categories_en_gb', 'category_name', 'Электрогидравлические пресса 40 - 100 Ton', '4fb95b4653727e1b0240c8e1f5b196ab', 'Electro-hydraulic workshop presses 40 - 100 ton', '2015-08-02 15:59:26', 547, 1),
-(967, 9, 55, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydrauliczna prasa 40 - 100 Tony', '4fb95b4653727e1b0240c8e1f5b196ab', 'Electro-hydraulic workshop presses 40 - 100 ton', '2015-08-02 15:59:47', 547, 1);
+(967, 9, 55, 'virtuemart_categories_en_gb', 'category_name', 'Elektro-hydrauliczna prasa 40 - 100 Tony', '4fb95b4653727e1b0240c8e1f5b196ab', 'Electro-hydraulic workshop presses 40 - 100 ton', '2015-08-02 15:59:47', 547, 1),
+(968, 2, 1531, 'virtuemart_product_coord', 'description', 'Lavt indstik kun 77 mm.', 'b4903c31ff051c0e4f325bb8639281b4', 'Ultra low entry height only 77 mm.', '2015-08-03 10:34:01', 547, 1),
+(969, 2, 1532, 'virtuemart_product_coord', 'description', 'Ekstremt lavt chassis, kan gå under de fleste biler.', '52513359a0df378836e8de60ad946001', 'Extremely low chassis for access under "any" vehicle.', '2015-08-03 10:34:35', 547, 1),
+(970, 2, 1533, 'virtuemart_product_coord', 'description', 'Hurtigt løft til løftepunktet ved brug af fodpedal.', '437c21483220613e65e97fe4214a78b3', 'Additional foot pedal pumping feature provides fast saddle raising to load.', '2015-08-03 10:34:55', 547, 1),
+(971, 2, 57, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:35:28', 547, 1),
+(972, 2, 502, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:35:34', 547, 1),
+(973, 2, 511, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:35:40', 547, 1),
+(974, 2, 556, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:35:45', 547, 1),
+(975, 2, 561, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:35:51', 547, 1),
+(976, 2, 573, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:35:56', 547, 1),
+(977, 2, 1289, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:36:01', 547, 1),
+(978, 2, 1321, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:36:07', 547, 1),
+(979, 2, 1459, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:36:12', 547, 1),
+(980, 2, 1500, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:36:18', 547, 1),
+(981, 2, 1508, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:36:23', 547, 1),
+(982, 2, 1534, 'virtuemart_product_coord', 'description', 'Chassis med lang rækkevidde forbedrer adgang til løftepunkter dybt under de fleste køretøjer.', 'c7f7ad03d4b6f4fd81b91c5d2486d469', 'Long reach chassis improves access to lifting points deep under vehicles.', '2015-08-03 10:36:29', 547, 1),
+(983, 2, 53, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:37:40', 547, 1),
+(984, 2, 501, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:37:45', 547, 1),
+(985, 2, 507, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:37:51', 547, 1),
+(986, 2, 545, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:37:57', 547, 1),
+(987, 2, 551, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:02', 547, 1),
+(988, 2, 558, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:07', 547, 1),
+(989, 2, 570, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:12', 547, 1),
+(990, 2, 580, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:18', 547, 1),
+(991, 2, 586, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:23', 547, 1),
+(992, 2, 598, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:29', 547, 1),
+(993, 2, 604, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:35', 547, 1),
+(994, 2, 608, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:41', 547, 1),
+(995, 2, 905, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:47', 547, 1),
+(996, 2, 981, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:38:53', 547, 1),
+(997, 2, 1286, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:00', 547, 1),
+(998, 2, 1318, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:06', 547, 1),
+(999, 2, 1446, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:12', 547, 1),
+(1000, 2, 1452, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:19', 547, 1),
+(1001, 2, 1463, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:25', 547, 1),
+(1002, 2, 1504, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:31', 547, 1),
+(1003, 2, 1511, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:39', 547, 1),
+(1004, 2, 1535, 'virtuemart_product_coord', 'description', 'Ergonomisk og gummibelagt kørestang.', '9ebcddeca8a0a1793d2ff47cf9708584', 'Ergonomically designed handle for operator comfort. Rubber coated.', '2015-08-03 10:39:45', 547, 1);
 
 -- --------------------------------------------------------
 
@@ -1934,23 +1973,23 @@ CREATE TABLE IF NOT EXISTS `k3n91_falang_tableinfo` (
   `joomlatablename` varchar(100) NOT NULL DEFAULT '',
   `tablepkID` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12581 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13081 ;
 
 --
 -- Dumping data for table `k3n91_falang_tableinfo`
 --
 
 INSERT INTO `k3n91_falang_tableinfo` (`id`, `joomlatablename`, `tablepkID`) VALUES
-(12571, 'banners', 'id'),
-(12572, 'categories', 'id'),
-(12573, 'contact_details', 'id'),
-(12574, 'content', 'id'),
-(12575, 'menu', 'id'),
-(12576, 'modules', 'id'),
-(12577, 'virtuemart_categories_en_gb', 'virtuemart_category_id'),
-(12578, 'virtuemart_product_coord', 'id'),
-(12579, 'virtuemart_products_en_gb', 'virtuemart_product_id'),
-(12580, 'weblinks', 'id');
+(13071, 'banners', 'id'),
+(13072, 'categories', 'id'),
+(13073, 'contact_details', 'id'),
+(13074, 'content', 'id'),
+(13075, 'menu', 'id'),
+(13076, 'modules', 'id'),
+(13077, 'virtuemart_categories_en_gb', 'virtuemart_category_id'),
+(13078, 'virtuemart_product_coord', 'id'),
+(13079, 'virtuemart_products_en_gb', 'virtuemart_product_id'),
+(13080, 'weblinks', 'id');
 
 -- --------------------------------------------------------
 
@@ -3033,8 +3072,8 @@ CREATE TABLE IF NOT EXISTS `k3n91_session` (
 --
 
 INSERT INTO `k3n91_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('e6in8cmoi0f6hb59j5983h4jg3', 0, 1, '1438531056', '__default|a:8:{s:15:"session.counter";i:39;s:19:"session.timer.start";i:1438527925;s:18:"session.timer.last";i:1438531053;s:17:"session.timer.now";i:1438531056;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"9";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:9;}s:14:"\\0\\0\\0_authLevels";a:3:{i:0;i:1;i:1;i:1;i:2;i:5;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:6:"notify";i:1;}__vm|a:4:{s:6:"manage";i:0;s:15:"vmlastvisItemid";i:1002;s:23:"vmlastvisitedcategoryid";i:54;s:19:"vmlastvisitedmanuid";i:-1;}', 0, ''),
-('qi6earvljeot8k205rmu704b64', 1, 0, '1438531281', '__default|a:8:{s:15:"session.counter";i:126;s:19:"session.timer.start";i:1438527918;s:18:"session.timer.last";i:1438531277;s:17:"session.timer.now";i:1438531281;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":5:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:14:"selected_catid";s:25:"virtuemart_products_en_gb";s:13:"selected_lang";s:1:"2";s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:20;}}s:26:"view{com_falang}limitstart";s:1:"0";}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"547";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:23:"trung@mywebcreations.dk";s:8:"password";s:60:"$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2015-07-17 10:31:47";s:13:"lastvisitDate";s:19:"2015-08-02 10:49:25";s:10:"activation";s:1:"0";s:6:"params";s:0:"";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:5:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:6;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"94af9ab5cc8e5f4c41042883911121dd";}', 547, 'admin');
+('h1sva6mnebadtujmlm72aonn37', 1, 0, '1438603060', '__default|a:8:{s:15:"session.counter";i:181;s:19:"session.timer.start";i:1438588323;s:18:"session.timer.last";i:1438603055;s:17:"session.timer.now";i:1438603060;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":9:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:14:"com_virtuemart";O:8:"stdClass":2:{s:8:"category";O:8:"stdClass":4:{s:6:"search";s:12:"Bottle jacks";s:12:"filter_order";s:13:"category_name";s:16:"filter_order_Dir";s:4:"DESC";s:10:"limitstart";i:0;}s:7:"product";O:8:"stdClass":4:{s:16:"filter_order_Dir";s:4:"DESC";s:12:"filter_order";s:10:"created_on";s:6:"filter";O:8:"stdClass":2:{s:22:"virtuemart_category_id";i:0;s:26:"virtuemart_manufacturer_id";i:0;}s:10:"limitstart";i:0;}}s:14:"selected_catid";s:24:"virtuemart_product_coord";s:13:"selected_lang";s:1:"2";s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:20;}}s:26:"view{com_falang}limitstart";s:1:"0";s:20:"keyword_filter_value";s:66:"Ergonomically designed handle for operator comfort. Rubber coated.";s:6:"filter";O:8:"stdClass":1:{s:7:"keyword";s:66:"Ergonomically designed handle for operator comfort. Rubber coated.";}s:11:"com_plugins";O:8:"stdClass":2:{s:7:"plugins";O:8:"stdClass":4:{s:6:"filter";O:8:"stdClass":4:{s:6:"search";s:6:"falang";s:6:"access";i:0;s:7:"enabled";s:0:"";s:6:"folder";s:0:"";}s:8:"ordercol";s:6:"folder";s:9:"orderdirn";s:3:"asc";s:10:"limitstart";i:0;}s:4:"edit";O:8:"stdClass":1:{s:6:"plugin";O:8:"stdClass":2:{s:2:"id";a:0:{}s:4:"data";N;}}}}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":28:{s:9:"\\0\\0\\0isRoot";b:1;s:2:"id";s:3:"547";s:4:"name";s:10:"Super User";s:8:"username";s:5:"admin";s:5:"email";s:23:"trung@mywebcreations.dk";s:8:"password";s:60:"$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu";s:14:"password_clear";s:0:"";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2015-07-17 10:31:47";s:13:"lastvisitDate";s:19:"2015-08-02 15:05:22";s:10:"activation";s:1:"0";s:6:"params";s:0:"";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:13:"lastResetTime";s:19:"0000-00-00 00:00:00";s:10:"resetCount";s:1:"0";s:12:"requireReset";s:1:"0";s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\\0\\0\\0_authLevels";a:5:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:6;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;s:6:"otpKey";s:0:"";s:4:"otep";s:0:"";}s:13:"session.token";s:32:"165103c68291cdd12da5304d742947a4";}', 547, 'admin'),
+('l5hprebq7gtibq58k4il2msb60', 0, 1, '1438603221', '__default|a:8:{s:15:"session.counter";i:54;s:19:"session.timer.start";i:1438588333;s:18:"session.timer.last";i:1438603208;s:17:"session.timer.now";i:1438603221;s:22:"session.client.browser";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0";s:8:"registry";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:4:"user";O:5:"JUser":26:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:1:"9";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:12:"requireReset";N;s:10:"\\0\\0\\0_params";O:24:"Joomla\\Registry\\Registry":2:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}s:9:"separator";s:1:".";}s:14:"\\0\\0\\0_authGroups";a:2:{i:0;i:1;i:1;i:9;}s:14:"\\0\\0\\0_authLevels";a:3:{i:0;i:1;i:1;i:1;i:2;i:5;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:13:"\\0\\0\\0userHelper";O:18:"JUserWrapperHelper":0:{}s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:6:"notify";i:1;}__vm|a:5:{s:6:"manage";i:0;s:15:"vmlastvisItemid";i:1002;s:23:"vmlastvisitedcategoryid";i:32;s:19:"vmlastvisitedmanuid";i:-1;s:23:"vmlastvisitedproductids";a:1:{i:0;i:781;}}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3547,7 +3586,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_users` (
 --
 
 INSERT INTO `k3n91_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(547, 'Super User', 'admin', 'trung@mywebcreations.dk', '$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu', 0, 1, '2015-07-17 10:31:47', '2015-08-02 15:05:22', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
+(547, 'Super User', 'admin', 'trung@mywebcreations.dk', '$2y$10$Q88Y4U0SrefhCx5APH.xgeaM0XykmD81dy.oirgnCYpvqLHUbTQQu', 0, 1, '2015-07-17 10:31:47', '2015-08-03 07:52:07', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -3908,14 +3947,14 @@ CREATE TABLE IF NOT EXISTS `k3n91_virtuemart_categories` (
 INSERT INTO `k3n91_virtuemart_categories` (`virtuemart_category_id`, `virtuemart_vendor_id`, `category_template`, `category_layout`, `category_product_layout`, `products_per_row`, `limit_list_step`, `limit_list_initial`, `hits`, `metarobot`, `metaauthor`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
 (12, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-04-10 03:41:39', 0, '2013-02-05 13:59:08', 0, '0000-00-00 00:00:00', 0),
 (11, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 3, 0, 1, '2012-04-10 03:41:09', 0, '2013-02-05 13:53:09', 0, '0000-00-00 00:00:00', 0),
-(10, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-04-10 03:40:30', 0, '2015-07-27 07:38:56', 547, '0000-00-00 00:00:00', 0),
-(19, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 3, 0, 1, '2012-08-28 08:10:39', 0, '2013-06-04 10:22:27', 0, '0000-00-00 00:00:00', 0),
+(10, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-04-10 03:40:30', 0, '2015-08-03 07:57:42', 547, '0000-00-00 00:00:00', 0),
+(19, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 3, 0, 1, '2012-08-28 08:10:39', 0, '2015-08-03 07:55:47', 547, '0000-00-00 00:00:00', 0),
 (9, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-04-10 03:39:53', 0, '2013-06-04 09:41:50', 0, '0000-00-00 00:00:00', 0),
 (77, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-02-04 12:47:50', 0, '2013-02-04 14:53:52', 0, '0000-00-00 00:00:00', 0),
 (14, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2012-06-01 02:57:19', 0, '2012-06-01 02:57:19', 0, '0000-00-00 00:00:00', 0),
-(58, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 15, 0, 1, '2013-01-04 10:59:21', 0, '2013-01-04 12:42:51', 0, '0000-00-00 00:00:00', 0),
+(58, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 15, 0, 1, '2013-01-04 10:59:21', 0, '2015-08-03 09:10:42', 547, '0000-00-00 00:00:00', 0),
 (59, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 11:00:15', 0, '2013-01-04 11:00:15', 0, '0000-00-00 00:00:00', 0),
-(18, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2012-08-28 08:05:55', 0, '2013-06-04 10:24:05', 0, '0000-00-00 00:00:00', 0),
+(18, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2012-08-28 08:05:55', 0, '2015-08-03 08:00:30', 547, '0000-00-00 00:00:00', 0),
 (20, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 4, 0, 1, '2012-08-28 08:12:48', 0, '2013-06-04 11:40:03', 0, '0000-00-00 00:00:00', 0),
 (21, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2012-08-28 08:57:51', 0, '2012-08-28 09:01:45', 0, '0000-00-00 00:00:00', 0),
 (22, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-08-28 08:58:17', 0, '2012-08-30 10:28:23', 0, '0000-00-00 00:00:00', 0),
@@ -3924,23 +3963,23 @@ INSERT INTO `k3n91_virtuemart_categories` (`virtuemart_category_id`, `virtuemart
 (26, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2012-08-30 10:25:09', 0, '2013-02-05 10:35:02', 0, '0000-00-00 00:00:00', 0),
 (47, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 10:41:48', 0, '2013-01-04 10:41:48', 0, '0000-00-00 00:00:00', 0),
 (48, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2013-01-04 10:42:25', 0, '2013-01-18 08:55:36', 0, '0000-00-00 00:00:00', 0),
-(56, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 14, 0, 1, '2013-01-04 10:57:46', 0, '2013-07-03 08:28:41', 0, '0000-00-00 00:00:00', 0),
+(56, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 14, 0, 1, '2013-01-04 10:57:46', 0, '2015-08-03 09:07:20', 547, '0000-00-00 00:00:00', 0),
 (57, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 10:58:30', 0, '2013-01-04 10:58:30', 0, '0000-00-00 00:00:00', 0),
-(31, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-12-20 08:13:05', 0, '2013-08-14 09:24:52', 0, '0000-00-00 00:00:00', 0),
+(31, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-12-20 08:13:05', 0, '2015-08-03 08:20:22', 547, '0000-00-00 00:00:00', 0),
 (32, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2012-12-20 08:49:13', 0, '2013-01-04 08:42:09', 0, '0000-00-00 00:00:00', 0),
 (33, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2013-01-04 08:44:09', 0, '2013-01-04 08:44:09', 0, '0000-00-00 00:00:00', 0),
-(34, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2013-01-04 08:46:29', 0, '2013-07-03 08:21:41', 0, '0000-00-00 00:00:00', 0),
+(34, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2013-01-04 08:46:29', 0, '2015-08-03 09:02:44', 547, '0000-00-00 00:00:00', 0),
 (35, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 08:54:16', 0, '2013-01-04 08:54:16', 0, '0000-00-00 00:00:00', 0),
 (36, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 2, 0, 1, '2013-01-04 08:55:01', 0, '2013-01-04 08:55:01', 0, '0000-00-00 00:00:00', 0),
 (37, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 3, 0, 1, '2013-01-04 08:59:22', 0, '2013-07-03 08:22:29', 0, '0000-00-00 00:00:00', 0),
 (38, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 09:02:40', 0, '2013-06-25 12:59:40', 0, '0000-00-00 00:00:00', 0),
 (39, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 7, 0, 1, '2013-01-04 09:03:27', 0, '2013-07-03 08:25:20', 0, '0000-00-00 00:00:00', 0),
 (40, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 09:03:54', 0, '2013-01-04 09:03:54', 0, '0000-00-00 00:00:00', 0),
-(41, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 13, 0, 1, '2013-01-04 10:30:26', 0, '2013-07-03 08:28:05', 0, '0000-00-00 00:00:00', 0),
+(41, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 13, 0, 1, '2013-01-04 10:30:26', 0, '2015-08-03 09:06:10', 547, '0000-00-00 00:00:00', 0),
 (42, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 10:30:59', 0, '2013-01-04 10:30:59', 0, '0000-00-00 00:00:00', 0),
-(43, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 8, 0, 1, '2013-01-04 10:33:11', 0, '2013-07-03 08:26:33', 0, '0000-00-00 00:00:00', 0),
+(43, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 8, 0, 1, '2013-01-04 10:33:11', 0, '2015-08-03 09:05:01', 547, '0000-00-00 00:00:00', 0),
 (44, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 10:33:56', 0, '2013-01-04 10:33:56', 0, '0000-00-00 00:00:00', 0),
-(46, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 6, 0, 1, '2013-01-04 10:38:39', 0, '2013-07-03 08:24:52', 0, '0000-00-00 00:00:00', 0),
+(46, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 6, 0, 1, '2013-01-04 10:38:39', 0, '2015-08-03 09:03:56', 547, '0000-00-00 00:00:00', 0),
 (49, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 12, 0, 1, '2013-01-04 10:43:57', 0, '2013-07-03 08:27:13', 0, '0000-00-00 00:00:00', 0),
 (50, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 1, 0, 1, '2013-01-04 10:44:40', 0, '2013-01-04 10:44:40', 0, '0000-00-00 00:00:00', 0),
 (51, 1, '0', '0', '0', 0, '10', 0, 0, '', '', 4, 0, 1, '2013-01-04 10:46:12', 0, '2013-07-03 08:23:14', 0, '0000-00-00 00:00:00', 0),
@@ -4252,13 +4291,13 @@ INSERT INTO `k3n91_virtuemart_category_categories` (`id`, `category_parent_id`, 
 (1, 11, 12, 0),
 (2, 10, 11, 0),
 (3, 9, 10, 1),
-(4, 9, 19, 0),
+(4, 9, 19, 3),
 (5, 0, 9, 0),
 (6, 72, 77, 0),
 (7, 0, 14, 0),
-(8, 14, 58, 0),
+(8, 14, 58, 15),
 (9, 58, 59, 0),
-(10, 9, 18, 0),
+(10, 9, 18, 2),
 (11, 9, 20, 0),
 (12, 23, 21, 0),
 (13, 23, 22, 0),
@@ -4267,23 +4306,23 @@ INSERT INTO `k3n91_virtuemart_category_categories` (`id`, `category_parent_id`, 
 (16, 20, 26, 0),
 (17, 46, 47, 0),
 (18, 46, 48, 0),
-(19, 14, 56, 0),
+(19, 14, 56, 14),
 (20, 56, 57, 0),
-(21, 14, 31, 0),
+(21, 14, 31, 1),
 (22, 31, 32, 0),
 (23, 31, 33, 0),
-(24, 14, 34, 0),
+(24, 14, 34, 2),
 (25, 34, 35, 0),
 (26, 34, 36, 0),
 (27, 14, 37, 0),
 (28, 37, 38, 0),
 (29, 14, 39, 0),
 (30, 39, 40, 0),
-(31, 14, 41, 0),
+(31, 14, 41, 13),
 (32, 41, 42, 0),
-(33, 14, 43, 0),
+(33, 14, 43, 8),
 (34, 43, 44, 0),
-(35, 14, 46, 0),
+(35, 14, 46, 6),
 (36, 14, 49, 0),
 (37, 49, 50, 0),
 (38, 14, 51, 0),
@@ -4374,7 +4413,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_virtuemart_category_medias` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `virtuemart_category_id` (`virtuemart_category_id`,`virtuemart_media_id`),
   KEY `ordering` (`ordering`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=79 ;
 
 --
 -- Dumping data for table `k3n91_virtuemart_category_medias`
@@ -4382,31 +4421,30 @@ CREATE TABLE IF NOT EXISTS `k3n91_virtuemart_category_medias` (
 
 INSERT INTO `k3n91_virtuemart_category_medias` (`id`, `virtuemart_category_id`, `virtuemart_media_id`, `ordering`) VALUES
 (1, 11, 2, 0),
-(3, 19, 13, 0),
+(70, 10, 59, 1),
 (4, 9, 5, 0),
 (5, 4, 5, 0),
 (6, 5, 5, 0),
-(7, 58, 44, 0),
 (8, 7, 6, 0),
-(9, 18, 12, 0),
+(72, 31, 61, 1),
 (10, 20, 8, 0),
 (11, 60, 9, 0),
 (12, 26, 18, 0),
 (13, 12, 10, 0),
 (14, 13, 10, 0),
-(15, 56, 42, 0),
+(78, 58, 67, 1),
 (16, 15, 11, 0),
-(17, 31, 21, 0),
+(73, 34, 62, 1),
 (18, 17, 12, 0),
-(19, 34, 23, 0),
+(74, 46, 63, 1),
 (20, 37, 14, 0),
 (21, 38, 15, 0),
 (22, 39, 16, 0),
 (23, 22, 16, 0),
-(24, 41, 29, 0),
+(77, 56, 66, 1),
 (25, 24, 17, 0),
-(26, 43, 30, 0),
-(27, 46, 32, 0),
+(76, 41, 65, 1),
+(75, 43, 64, 1),
 (28, 49, 20, 0),
 (29, 28, 20, 0),
 (30, 51, 21, 0),
@@ -4447,7 +4485,8 @@ INSERT INTO `k3n91_virtuemart_category_medias` (`id`, `virtuemart_category_id`, 
 (65, 132, 49, 0),
 (66, 136, 50, 0),
 (67, 139, 51, 0),
-(68, 10, 56, 1);
+(71, 18, 60, 1),
+(69, 19, 58, 1);
 
 -- --------------------------------------------------------
 
@@ -5255,7 +5294,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_virtuemart_medias` (
   KEY `published` (`published`),
   KEY `file_type` (`file_type`),
   KEY `shared` (`shared`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Additional Images and Files which are assigned to products' AUTO_INCREMENT=58 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Additional Images and Files which are assigned to products' AUTO_INCREMENT=80 ;
 
 --
 -- Dumping data for table `k3n91_virtuemart_medias`
@@ -5274,7 +5313,7 @@ INSERT INTO `k3n91_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor
 (10, 1, 'Jacks Trouble shooting', '', 'Jacks_Trouble_sh_510f775707a4a.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Jacks_Trouble_sh_510f775707a4a.jpg', 'images/stories/virtuemart/category/resized/Jacks_Trouble_sh_510f775707a4a_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:00', 547, '2015-07-18 11:12:00', 547, '0000-00-00 00:00:00', 0),
 (11, 1, 'Axle stands', '', 'Axle_stands_51d3e0b945258.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Axle_stands_51d3e0b945258.jpg', 'images/stories/virtuemart/category/resized/Axle_stands_51d3e0b945258_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:00', 547, '2015-07-18 11:12:00', 547, '0000-00-00 00:00:00', 0),
 (12, 1, 'Jacks 1,5 - 3 ton', '', 'Jacks_1_5___3_to_51d3def15775c.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Jacks_1_5___3_to_51d3def15775c.jpg', 'images/stories/virtuemart/category/resized/Jacks_1_5___3_to_51d3def15775c_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:00', 547, '2015-07-18 11:12:00', 547, '0000-00-00 00:00:00', 0),
-(13, 1, 'Jacks 4 - 20 ton', '', 'Jacks_4___20_ton_51d3df15aba0d.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Jacks_4___20_ton_51d3df15aba0d.jpg', 'images/stories/virtuemart/category/resized/Jacks_4___20_ton_51d3df15aba0d_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:00', 547, '2015-07-18 11:12:00', 547, '0000-00-00 00:00:00', 0),
+(13, 1, 'Jacks 4 - 20 ton', '', 'Jacks_4___20_ton_51d3df15aba0d.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Garanti.jpg', 'images/stories/virtuemart/category/resized/Jacks_4___20_ton_51d3df15aba0d_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:00', 547, '2015-08-03 07:55:01', 547, '0000-00-00 00:00:00', 0),
 (14, 1, 'Air hydraulic jacks', '', 'Air_hydraulic_ja_51d3df45a227d.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Air_hydraulic_ja_51d3df45a227d.jpg', 'images/stories/virtuemart/category/resized/Air_hydraulic_ja_51d3df45a227d_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:03', 547, '2015-07-18 11:12:03', 547, '0000-00-00 00:00:00', 0),
 (15, 1, 'Air hydraulic jacks_category', '', 'Air_hydraulic_ja_51c9943cd9495.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Air_hydraulic_ja_51c9943cd9495.jpg', 'images/stories/virtuemart/category/resized/Air_hydraulic_ja_51c9943cd9495_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:03', 547, '2015-07-18 11:12:03', 547, '0000-00-00 00:00:00', 0),
 (16, 1, 'Wheel dollies', '', 'Wheel_dollies_51d3dff09ec1f.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Wheel_dollies_51d3dff09ec1f.jpg', 'images/stories/virtuemart/category/resized/Wheel_dollies_51d3dff09ec1f_210x175.jpg', 0, 0, 0, '', '', 0, 1, '2015-07-18 11:12:03', 547, '2015-07-18 11:12:03', 547, '0000-00-00 00:00:00', 0),
@@ -5316,7 +5355,29 @@ INSERT INTO `k3n91_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor
 (52, 1, '2T_77.jpg', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T_77.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-07-19 10:55:46', 547, '2015-07-29 12:45:32', 547, '0000-00-00 00:00:00', 0),
 (56, 1, 'Spare_parts', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/spare parts.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-07-27 07:37:28', 547, '2015-07-27 07:38:56', 547, '0000-00-00 00:00:00', 0),
 (55, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 Low (A)2.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-07-20 19:36:02', 547, '2015-07-20 19:36:02', 547, '0000-00-00 00:00:00', 0),
-(57, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 Low (A)6.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-07-30 07:56:08', 547, '2015-07-30 07:56:08', 547, '0000-00-00 00:00:00', 0);
+(57, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 Low (A)6.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-07-30 07:56:08', 547, '2015-07-30 07:56:08', 547, '0000-00-00 00:00:00', 0),
+(58, 1, 'Jacks 4 - 20 ton_category', '', 'Jacks_4___20_ton_51d3df15aba0d.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Garanti4.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 07:55:47', 547, '2015-08-03 07:55:47', 547, '0000-00-00 00:00:00', 0),
+(59, 1, 'Spare_parts_category', '', '', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Spare_parts.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 07:57:42', 547, '2015-08-03 07:57:42', 547, '0000-00-00 00:00:00', 0),
+(60, 1, 'Jacks 1,5 - 3 ton_category', '', 'Jacks_1_5___3_to_51d3def15775c.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Wheels.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 08:00:30', 547, '2015-08-03 08:00:30', 547, '0000-00-00 00:00:00', 0),
+(61, 1, 'Workshop presses_category', '', 'Workshop_presses_51d3df72be25b.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Jacks_1_5___3_to.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 08:20:22', 547, '2015-08-03 08:20:22', 547, '0000-00-00 00:00:00', 0),
+(62, 1, '2,5 - 3 Ton jacks_category', '', '2_5___3_Ton_jack_510fa56b52d2f.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Jacks_4___20_ton.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:02:44', 547, '2015-08-03 09:02:44', 547, '0000-00-00 00:00:00', 0),
+(63, 1, '15 - 20 Ton jacks_category', '', '15___20_Ton_jack_510fae950fb4f.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Transmission_jac.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:03:56', 547, '2015-08-03 09:03:56', 547, '0000-00-00 00:00:00', 0),
+(64, 1, '7 - 8 Ton jacks_category', '', '7___8_Ton_jacks_510fa6bbe4f67.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Workshop_cranes.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:05:01', 547, '2015-08-03 09:05:01', 547, '0000-00-00 00:00:00', 0),
+(65, 1, '4 - 6 Ton jacks_category', '', '4___6_Ton_jacks_510fa5bd03afe.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Body_repair_kits.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:06:10', 547, '2015-08-03 09:06:10', 547, '0000-00-00 00:00:00', 0),
+(66, 1, 'Jacking beams_category', '', 'Jacking_beams_510fb71d3cbe6.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Axle_stands.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:07:20', 547, '2015-08-03 09:07:20', 547, '0000-00-00 00:00:00', 0),
+(67, 1, '2 Ton jacks_category', '', '2_Ton_jacks_51110f0067039.jpg', '', 'image/jpeg', 'category', 'images/stories/virtuemart/category/Bottle_jacks.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:10:42', 547, '2015-08-03 09:10:42', 547, '0000-00-00 00:00:00', 0),
+(68, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 Low (A)9.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:49:30', 547, '2015-08-03 09:49:30', 547, '0000-00-00 00:00:00', 0),
+(69, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 Studio (A).jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:49:47', 547, '2015-08-03 09:49:47', 547, '0000-00-00 00:00:00', 0),
+(70, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 lifting point.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:50:08', 547, '2015-08-03 09:50:08', 547, '0000-00-00 00:00:00', 0),
+(71, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/2T-77 lifting high.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:50:21', 547, '2015-08-03 09:50:21', 547, '0000-00-00 00:00:00', 0),
+(72, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/Chassis detail.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:50:36', 547, '2015-08-03 09:50:36', 547, '0000-00-00 00:00:00', 0),
+(73, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/Close up fodpedal.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:51:38', 547, '2015-08-03 09:51:38', 547, '0000-00-00 00:00:00', 0),
+(74, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/Low front.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 09:51:54', 547, '2015-08-03 09:51:54', 547, '0000-00-00 00:00:00', 0),
+(75, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/060245 - Hard rubber53f704f39d72f.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-08-03 10:29:08', 547, '2015-08-03 10:29:08', 547, '0000-00-00 00:00:00', 0),
+(76, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/1077 - Rubber saddle - Gummiauflage 22.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-08-03 10:29:27', 547, '2015-08-03 10:29:27', 547, '0000-00-00 00:00:00', 0),
+(77, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/3068 - 40 mm Extensi53f704e47a64c.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-08-03 10:29:40', 547, '2015-08-03 10:29:40', 547, '0000-00-00 00:00:00', 0),
+(78, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/Close-up Bogie PU (T53f70b8278c1e.jpg', '', 0, 0, 0, '', '', 0, 1, '2015-08-03 10:30:01', 547, '2015-08-03 10:30:01', 547, '0000-00-00 00:00:00', 0),
+(79, 1, '2T_77.jpg_product', '', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/Close-up Bogie PU (T53f70b8278c1e5.jpg', '', 0, 1, 0, '', '', 0, 1, '2015-08-03 10:30:17', 547, '2015-08-03 10:30:17', 547, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -6247,7 +6308,7 @@ INSERT INTO `k3n91_virtuemart_products` (`virtuemart_product_id`, `virtuemart_ve
 (778, 1, 0, 'Wheels (GL)', NULL, NULL, '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', '', 0, 0, 0, '2013-10-23 00:00:00', '', 0, 0, '', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""', 0, '', '', '', '0', 1, 0, '2013-10-23 12:45:34', 0, '2013-10-23 12:50:22', 0, '0000-00-00 00:00:00', 0, ''),
 (779, 1, 0, 'V-Blocks', NULL, NULL, '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', '', 0, 0, 0, '2014-01-28 00:00:00', '', 0, 0, '', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""', 0, '', '', '', '0', 1, 0, '2014-01-28 10:01:12', 0, '2014-01-28 10:01:12', 0, '0000-00-00 00:00:00', 0, ''),
 (780, 1, 0, 'MP100', NULL, NULL, '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', '', 0, 0, 0, '2014-05-13 00:00:00', '', 0, 0, '', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""', 0, '', '', '', '0', 1, 0, '2014-05-13 07:39:25', 0, '2014-05-13 07:39:25', 0, '0000-00-00 00:00:00', 0, ''),
-(781, 1, 0, '2T-77', '', '', '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', 'https://www.youtube.com/watch?v=CIXi1QyciCk', 0, 0, 0, '2014-08-22 00:00:00', '', 0, 0, 'KG', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', 0, '', '', '', '0', 1, 0, '2014-08-22 06:39:41', 0, '2015-07-30 07:56:08', 547, '0000-00-00 00:00:00', 0, '2T-77.jpg'),
+(781, 1, 0, '2T-77', '', '', '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', 'https://www.youtube.com/watch?v=CIXi1QyciCk', 0, 0, 0, '2014-08-22 00:00:00', '', 0, 0, 'KG', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""|', 0, '', '', '', '0', 1, 0, '2014-08-22 06:39:41', 0, '2015-08-03 10:30:17', 547, '0000-00-00 00:00:00', 0, '2T-77.jpg'),
 (782, 1, 0, '2T-77 (G1)', NULL, NULL, '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', '', 0, 0, 0, '2014-09-09 00:00:00', '', 0, 0, '', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""', 0, '', '', '', '0', 1, 0, '2014-09-09 11:59:46', 0, '2014-09-09 12:00:18', 0, '0000-00-00 00:00:00', 0, ''),
 (783, 1, 0, 'EP 100 D (G5)', NULL, NULL, '0.0000', 'LB', '0.0000', '0.0000', '0.0000', 'IN', '', 0, 0, 0, '2015-01-14 00:00:00', '', 0, 0, '', '0.0000', 'min_order_level=""|max_order_level=""|step_order_level=""|product_box=""', 0, '', '', '', '0', 1, 0, '2015-01-14 10:05:26', 0, '2015-01-14 10:05:26', 0, '0000-00-00 00:00:00', 0, '');
 
@@ -8350,7 +8411,7 @@ CREATE TABLE IF NOT EXISTS `k3n91_virtuemart_product_medias` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `virtuemart_product_id` (`virtuemart_product_id`,`virtuemart_media_id`),
   KEY `ordering` (`ordering`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `k3n91_virtuemart_product_medias`
@@ -8358,7 +8419,17 @@ CREATE TABLE IF NOT EXISTS `k3n91_virtuemart_product_medias` (
 
 INSERT INTO `k3n91_virtuemart_product_medias` (`id`, `virtuemart_product_id`, `virtuemart_media_id`, `ordering`) VALUES
 (1, 781, 52, 1),
-(6, 781, 57, 2);
+(8, 781, 69, 3),
+(7, 781, 68, 2),
+(9, 781, 70, 4),
+(10, 781, 71, 5),
+(11, 781, 72, 6),
+(12, 781, 73, 7),
+(13, 781, 74, 8),
+(14, 781, 75, 9),
+(15, 781, 76, 10),
+(16, 781, 77, 11),
+(18, 781, 79, 12);
 
 -- --------------------------------------------------------
 
