@@ -12,7 +12,7 @@ defined ('_JEXEC') or die('Restricted access');
 		foreach ($products as $product){
 		$link = 'index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' . $product->virtuemart_category_id;
 		?>
-		<li><a data-title="product<?php echo $i;?>" href="<?php echo $link; ?>"><img width="138" height="103" src="<?php echo JURI::base().$product->images[0]->file_url_thumb;?>"></a></li>
+		<li><a data-title="product<?php echo $i;?>" href="<?php echo $link; ?>"><img width="138" height="103" src="<?php echo JURI::base().$product->images[0]->file_url;?>"></a></li>
 		<?php $i++;}?>
 	</ul>
 	<a id="product-next" class="product-button">Next</a>
