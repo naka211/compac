@@ -66,10 +66,17 @@ if($cache){
 $vendorId = vRequest::getInt('vendorid', 1);
 
 if ($filter_category ) $filter_category = TRUE;
-
+//T.Trung
+$cats_arr = array(52=>52, 53=>53, 44=>44, 40=>40, 47=>47, 48=>48, 50=>50, 35=>35, 36=>36, 33=>33, 32=>32, 55=>55, 59=>59, 42=>42, 57=>57, 38=>38);
+$cats = array_rand($cats_arr, 4);
+//T.Trung end
 $productModel = VmModel::getModel('Product');
-
-$products = $productModel->getProductListing($Product_group, $max_items, $show_price, true, false,$filter_category, $category_id);
+$products = array();
+foreach($cats as $cat){
+	$products_tmp = $productModel->getProductListing($Product_group, $max_items, $show_price, true, false,$filter_category, $cat);
+	$products = array_merge($products, $products_tmp);
+}
+//$products = $productModel->getProductListing($Product_group, $max_items, $show_price, true, false,$filter_category, $category_id);
 $productModel->addImages($products);
 
 if (!class_exists('shopFunctionsF'))

@@ -1,5 +1,5 @@
 html,body{padding:0; margin:0}
-body{background-color:#000; font-family: Arial,Helvetica,Verdana; font-size: 14px; line-height:26px; color:#bababa; position:relative;-webkit-text-size-adjust:none}
+body{background-color:#000; font-family: Arial,Helvetica,Verdana; font-size: 12px; line-height:26px; color:#bababa; position:relative;-webkit-text-size-adjust:none}
 body *{text-shadow:none}
 h1,h2,h3,h4,h5,h6{line-height:1;font-weight: bold; margin:20px 0 10px; font-family: 'Century Gothic', Arial,Helvetica,Verdana;}
 h1,h2{font-size:26px}
@@ -169,7 +169,7 @@ ul.list-models li {width: 48%; display: inline-block;}
 
 /**Tho**/ 
  img {max-width: 100%;} 
-.btn, a.btn { font-size: 14px; font-weight: bold; color: #fff; background: #42bc92; text-decoration: none;}
+.btn, a.btn { font-size: 12px; font-weight: bold; color: #fff; background: #42bc92; text-decoration: none;}
 .btn:hover { color: #fff;}
 .header h2 {padding-left: 0; padding-top: 34px; }
 .logo {background-position: center 0;  max-width: 100%;  background-size: 200px; } 

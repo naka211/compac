@@ -1,5 +1,25 @@
 <?php
 defined('_JEXEC') or die;
+//Detect mobile
+session_start();
+$config =& JFactory::getConfig();
+$showPhone = $config->get( 'show_phone' );
+$enablePhone = $config->get( 'enable_phone' );
+require_once 'Mobile_Detect.php';
+$detect = new Mobile_Detect;
+if(!isset($_SESSION['mobile'])){
+	if($detect->isMobile()){
+		$_SESSION['mobile'] = true;
+	}
+}
+if($showPhone){
+	$_SESSION['mobile'] = $showPhone;
+}
+if ( ($showPhone || $detect->isMobile()) && ($enablePhone) && ($_SESSION['mobile'])) {
+    include('default_mobile.php');
+    return;
+}
+//Detect mobile ends
 JHTML::_('behavior.formvalidator');
 ?>
 
@@ -13,7 +33,7 @@ JHTML::_('behavior.formvalidator');
 				<div class="contact-wrapper clear-fix">
 					<div class="contact-left">
 						<h2>{article 1115}{title}{/article}</h2>
-						{article 1115}{introtext}{/article}
+						{article 1115}{text}{/article}
 						<div id="contact-link">
 							<ul>
 								<li><a id="c-who" href="index.php?option=com_content&view=category&layout=contact&id=50&Itemid=1003&lang=<?php echo JRequest::getVar('lang');?>"><?php echo JText::_('CONTACT_INFO');?></a></li>
