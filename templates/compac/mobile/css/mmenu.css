@@ -158,8 +158,7 @@ html.mmenu-right.mmenu-opening #mmenu-blocker
 }
 .mmenu li > a,
 .mmenu li > span,
-.mmenu li > a:hover,
-.mmenu li.active > a
+.mmenu li > a:hover
 {
   color: #999;
   text-decoration: none;
@@ -173,7 +172,9 @@ html.mmenu-right.mmenu-opening #mmenu-blocker
 {
   background: transparent;
 }
-
+.mmenu li.active {
+ background: #0d5c4e;
+}
 
 /*
   Submenu

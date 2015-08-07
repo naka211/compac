@@ -15,6 +15,7 @@ $flag = $tmp[0];
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<script type="text/javascript" src="<?php echo $tmpl;?>js/jquery.min.js"></script>
 <jdoc:include type="head" />
 <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $tmpl;?>favicon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="<?php echo $tmpl;?>favicon/apple-touch-icon-60x60.png">
@@ -39,14 +40,14 @@ $flag = $tmp[0];
 <link type="text/css" rel="stylesheet" href="<?php echo $tmpl;?>css/mmenu.css" />
 <link href="<?php echo $tmpl;?>css/bootstrap.min.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="<?php echo $tmpl;?>css/style.css" />
-<script type="text/javascript" src="<?php echo $tmpl;?>js/jquery.min.js"></script>
+
 <script type="text/javascript" src="<?php echo $tmpl;?>js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $tmpl;?>js/mmenu.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$('nav#menu-left').mmenu();
+	jQuery(function() {
+		jQuery('nav#menu-left').mmenu();
 		//$('nav#menu-right').mmenu(); 
-		var $menu = $('#menu-right');  
+		var $menu = jQuery('#menu-right');  
 		$menu.mmenu({
 			position: 'right', 
 			addCounters: true

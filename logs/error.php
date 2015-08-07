@@ -5,3 +5,4 @@
 
 #Fields: datetime	priority clientip	category	message
 2015-07-18T09:43:50+00:00	INFO ::1	joomlafailure	Empty password not allowed.
+2015-08-07T15:46:42+00:00	INFO ::1	joomlafailure	Empty password not allowed.
