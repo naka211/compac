@@ -9,7 +9,20 @@
 		<div id="page"> 
 			<div class="content">
 			    <section class="banner text-center">
-			    	<img class="img-responsive" src="img/img01.jpg" alt="">
+			    	<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+				        <div class="carousel-inner">
+				            <div class="item active">
+				                <img src="img/img01.jpg" alt="First Slide">
+				            </div>
+				            <div class="item">
+				                <img src="img/img01.jpg" alt="Second Slide">
+				            </div>
+				            <div class="item">
+				                <img src="img/img01.jpg" alt="Third Slide">
+				            </div>
+				        </div>
+				    </div>
+
 			    	<h2><span>Welcome to</span> Compac Hydraulik</h2>
 			    	<p>Manufacturer since 1946<br>Compac has been manufacturing high quality hydraulic products since 1946. The aim of the experienced engineering staff at Compac is to ensure excellence in quality and reliability with the key objective of creating satisfied customers.</p>
 			    	<a class="btn btnFind" href="contact.php">Find Us Here <i class="fa fa-chevron-right fa-lg"></i></a>
@@ -46,18 +59,18 @@
 			    	<div class="container">
 			    		<div class="row">
 			    			<h2>PRODUCTS</h2>
-			    			<div id="myCarousel" class="carousel slide">
+			    			<!-- <div id="myCarousel" class="carousel slide">
 			                    <div class="carousel-inner">
 			                        <div class="item active">
 			                            <div class="row">
-			                                <div class="col-xs-6">
+			                                <div class="col-xs-6 pad5">
 			                                    <div class="thumbnail">
 			                                        <a href="product2.php">
 			                                            <img src="img/pro01.jpg" alt="">
 			                                        </a>
 			                                    </div>
 			                                </div>
-			                                <div class="col-xs-6">
+			                                <div class="col-xs-6 pad5">
 			                                    <div class="thumbnail">
 			                                        <a href="product2.php">
 			                                            <img src="img/pro02.jpg" alt="">
@@ -68,14 +81,14 @@
 			                        </div>
 			                        <div class="item">
 			                        	<div class="row">
-				                            <div class="col-xs-6">
+				                            <div class="col-xs-6 pad5">
 			                                    <div class="thumbnail">
 			                                        <a href="product2.php">
 			                                            <img src="img/pro01.jpg" alt="">
 			                                        </a>
-			                                    </div>        
+			                                    </div>
 			                                </div>
-			                                <div class="col-xs-6">
+			                                <div class="col-xs-6 pad5">
 			                                    <div class="thumbnail">
 			                                        <a href="product2.php">
 			                                            <img src="img/pro02.jpg" alt="">
@@ -87,7 +100,14 @@
 			                    </div>
 			                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
 			                    <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
-			                </div><!-- End Carousel -->
+			                </div> -->
+			                <ul class="bxslider">
+							  <li><a href="#"><img src="img/pro01.jpg" /></a></li>
+							  <li><a href="#"><img src="img/pro02.jpg" /></a></li>
+							  <li><a href="#"><img src="img/pro01.jpg" /></a></li>
+							  <li><a href="#"><img src="img/pro02.jpg" /></a></li>
+							  <li><a href="#"><img src="img/pro01.jpg" /></a></li>
+							</ul>
 			    		</div>
 			    	</div>
 			    </section>

@@ -26,14 +26,31 @@
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 <link type="text/css" rel="stylesheet" href="css/mmenu.css" />
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="css/jquery.bxslider.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mmenu.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 
 <script type="text/javascript">
+	$(document).ready(function(){
+	     $("#carousel").carousel({
+	         interval : false
+	     });
+
+	    $('.bxslider').bxSlider({
+			minSlides: 2,
+			maxSlides: 4,
+			slideWidth: 247,
+			slideMargin: 15,
+			auto: true,
+  			// autoControls: true
+		});
+	});
+	
 	$(function() {
 		$('nav#menu-left').mmenu();
 		//$('nav#menu-right').mmenu(); 

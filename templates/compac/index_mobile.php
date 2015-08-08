@@ -39,11 +39,29 @@ $flag = $tmp[0];
 <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 <link type="text/css" rel="stylesheet" href="<?php echo $tmpl;?>css/mmenu.css" />
 <link href="<?php echo $tmpl;?>css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="<?php echo $tmpl;?>css/jquery.bxslider.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="<?php echo $tmpl;?>css/style.css" />
 
 <script type="text/javascript" src="<?php echo $tmpl;?>js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $tmpl;?>js/mmenu.js"></script>
+<script type="text/javascript" src="<?php echo $tmpl;?>js/jquery.bxslider.min.js"></script>
+
 <script type="text/javascript">
+	jQuery(document).ready(function(){
+	     jQuery("#carousel").carousel({
+	         interval : false
+	     });
+
+	    jQuery('.bxslider').bxSlider({
+			minSlides: 2,
+			maxSlides: 4,
+			slideWidth: 247,
+			slideMargin: 15,
+			auto: true,
+  			// autoControls: true
+		});
+	});
+	
 	jQuery(function() {
 		jQuery('nav#menu-left').mmenu();
 		//$('nav#menu-right').mmenu(); 
@@ -69,32 +87,8 @@ $flag = $tmp[0];
 		<section class="product">
 			<div class="container">
 				<div class="row">
-					<h2>PRODUCTS</h2>
-					<div id="myCarousel" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="row">
-									<div class="col-xs-6">
-										<div class="thumbnail"> <a href="product2.php"> <img src="<?php echo $tmpl;?>img/pro01.jpg" alt=""> </a> </div>
-									</div>
-									<div class="col-xs-6">
-										<div class="thumbnail"> <a href="product2.php"> <img src="<?php echo $tmpl;?>img/pro02.jpg" alt=""> </a> </div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="row">
-									<div class="col-xs-6">
-										<div class="thumbnail"> <a href="product2.php"> <img src="<?php echo $tmpl;?>img/pro01.jpg" alt=""> </a> </div>
-									</div>
-									<div class="col-xs-6">
-										<div class="thumbnail"> <a href="product2.php"> <img src="<?php echo $tmpl;?>img/pro02.jpg" alt=""> </a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<a class="left carousel-control" href="#myCarousel" data-slide="prev"></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"></a> </div>
-					<!-- End Carousel --> 
+					<h2><?php echo JText::_('PRODUCTS');?></h2>
+					{module HomeProductSlider}
 				</div>
 			</div>
 		</section>

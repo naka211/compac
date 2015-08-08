@@ -1,6 +1,26 @@
 <?php
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
+//Detect mobile
+session_start();
+$config =& JFactory::getConfig();
+$showPhone = $config->get( 'show_phone' );
+$enablePhone = $config->get( 'enable_phone' );
+require_once 'Mobile_Detect.php';
+$detect = new Mobile_Detect;
+if(!isset($_SESSION['mobile'])){
+	if($detect->isMobile()){
+		$_SESSION['mobile'] = true;
+	}
+}
+if($showPhone){
+	$_SESSION['mobile'] = $showPhone;
+}
+if ( ($showPhone || $detect->isMobile()) && ($enablePhone) && ($_SESSION['mobile'])) {
+    include('default_mobile.php');
+    return;
+}
+//Detect mobile ends
 $imageArr = array();
 $accessArr = array();
 foreach($this->product->images as $image){

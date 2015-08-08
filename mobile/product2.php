@@ -10,7 +10,7 @@
 			<div class="content">
 			    <section class="products">
 			    	<div class="container">
-			    		<div class="col-xs-12">
+			    		<div class="col-xs-12 showproduct">
 			    			<h2 class="no-span">SPARE PARTS</h2>
 				    		<div class="row">
 			    				<ul class="breadcrumb">
