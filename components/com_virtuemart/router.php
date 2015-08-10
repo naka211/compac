@@ -280,10 +280,10 @@ function virtuemartBuildRoute(&$query) {
 	}
 
 
-	if (isset($query['task'])) {
+	/*if (isset($query['task'])) {
 		$segments[] = $helper->lang($query['task']);
 		unset($query['task']);
-	}
+	}*/
 	if (isset($query['layout'])) {
 		$segments[] = $helper->lang($query['layout']) ;
 		unset($query['layout']);
@@ -326,6 +326,9 @@ function virtuemartParseRoute($segments) {
 		$vars['limit'] = $results[1]-$results[0]+1;
 
 	} else {
+		//T.Trung
+		$vars['layout'] = $splitted[0];
+		//T.Trung
 		$vars['limitstart'] = 0 ;
 		if(vmrouterHelper::$limit === null){
 			vmrouterHelper::$limit = VmConfig::get('list_limit', 20);
@@ -615,7 +618,10 @@ function virtuemartParseRoute($segments) {
 
 
 	} elseif (!$helper->use_id && ($helper->activeMenu->view == 'category' ) )  {
-		$vars['virtuemart_category_id'] = $helper->getCategoryId (end($segments) ,$helper->activeMenu->virtuemart_category_id);
+		//$vars['virtuemart_category_id'] = $helper->getCategoryId (end($segments) ,$helper->activeMenu->virtuemart_category_id);
+		//T.Trung
+		$vars['virtuemart_category_id'] = $helper->getCategoryId ($segments[0] ,$helper->activeMenu->virtuemart_category_id);
+		//T.Trung end
 		$vars['view'] = 'category' ;
 
 

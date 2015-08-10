@@ -71,20 +71,6 @@ class VirtueMartControllerVirtuemart extends JControllerLegacy
         die(true);
 	}
 	
-	function downloadFile(){
-		$file = JRequest::getVar('file');
-		$pathFile = JPATH_BASE.DIRECTORY_SEPARATOR."images".DIRECTORY_SEPARATOR.$file;
-		
-		header("Cache-Control: public");
-		header("Content-Description: File Transfer");
-		header('Content-disposition: attachment; filename='.basename($pathFile));
-		header("Content-Type: application/pdf");
-		header("Content-Transfer-Encoding: binary");
-		header('Content-Length: '. filesize($pathFile));
-		readfile($pathFile);
-		exit;
-	}
-	
 	function accessDistribute(){
 		$pass = JRequest::getVar('pass');
 		

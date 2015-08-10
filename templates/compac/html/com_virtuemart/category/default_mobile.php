@@ -23,13 +23,13 @@ jQuery(document).ready(function(){
 				<?php foreach ($children as $category ) {
 					$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&layout=level2&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);
 					if($category->virtuemart_category_id == 18){
-						$caturl = "index.php?option=com_virtuemart&controller=virtuemart&task=downloadFile&file=wheels.pdf";
+						$caturl = "index.php?option=com_virtuemart&controller=category&task=downloadFile&file=wheels.pdf";
 					}
 					if($category->virtuemart_category_id == 19){
-						$caturl = "index.php?option=com_virtuemart&controller=virtuemart&task=downloadFile&file=garanti.pdf";
+						$caturl = "index.php?option=com_virtuemart&controller=category&task=downloadFile&file=garanti.pdf";
 					}
 					if($category->virtuemart_category_id == 10){
-						$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&layout=documents&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);
+						$caturl = JRoute::_( 'index.php?option=com_virtuemart&view=category&layout=documents&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);
 					}
 					if($category->virtuemart_category_id != 20){
 					?>

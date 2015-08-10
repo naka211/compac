@@ -58,5 +58,19 @@ class VirtueMartControllerCategory extends JControllerLegacy {
 		}
 		return $this;
 	}
+	
+	function downloadFile(){
+		$file = JRequest::getVar('file');
+		$pathFile = JPATH_BASE.DIRECTORY_SEPARATOR."images".DIRECTORY_SEPARATOR.$file;
+		
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header('Content-disposition: attachment; filename='.basename($pathFile));
+		header("Content-Type: application/pdf");
+		header("Content-Transfer-Encoding: binary");
+		header('Content-Length: '. filesize($pathFile));
+		readfile($pathFile);
+		exit;
+	}
 }
 // pure php no closing tag
