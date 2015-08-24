@@ -31,7 +31,7 @@ if ( ($showPhone || $detect->isMobile()) && ($enablePhone) && ($_SESSION['mobile
 				</div>
 				<div class="template-wrapper">
 				<?php echo $this->item->fulltext;?>				
-				<a class="read-more-2" onclick="window.history.back();" href="#"><?php echo JText::_('BACK');?></a>
+				<a class="read-more-2" href="javascript:history.go(-1);"><?php echo JText::_('BACK');?></a>
 				</div>				
 			</div>			
 		</div>

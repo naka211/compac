@@ -82,11 +82,13 @@ $coords = $db->loadObjectList();
 			</div>
 			<div class="row mt20">
 				<div class="info-pro clearfix">
+					<div style="background-color:white; width:100%; float:left;">
 					<div class="col-xs-12 pad0 img-larg">
 						<img src="<?php echo JURI::base().'images/upload/'.$this->product->coord_image;?>">
 						<?php for($i = 0; $i < count($coords); $i++){?>
 						<span style="top: <?php echo $coords[$i]->y;?>px; left: <?php echo $coords[$i]->x;?>px;" class="circle"><?php echo $i + 1; ?></span>
 						<?php }?>
+					</div>
 					</div>
 					<div class="col-xs-12">
 						<?php for($i = 0; $i < count($coords); $i++){?>
@@ -111,21 +113,27 @@ $coords = $db->loadObjectList();
 			</div>
 			<?php
 			if(!empty($this->product->product_url)){
+				$youtubeid = ""; 
+				preg_match('/[\\?\\&]v=([^\\?\\&]+)/',$this->product->product_url,$matches);
+				if(count($matches)){
+					$youtubeid = $matches[1];
+					$youtublink = 'http://www.youtube.com/embed/'. $youtubeid."?rel=0";
+				}
 			?>
 			<div class="row mt20">
 				<h5 class="h5 ml0"><?php echo JText::_('PRESENTATION'); ?></h5>
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="<?php echo $this->product->product_url;?>"></iframe>
+					<iframe class="embed-responsive-item" src="<?php echo $youtublink;?>"></iframe>
 				</div>
 			</div>
 			<?php }?>
 			<div class="row mt20">
 				<?php if($pdf_file){?>
-				<div class="col-xs-6 pad0">
+				<div class="col-xs-12 pad0">
 					<a class=" btn btn-intros" href="<?php echo JURI::base();?>plugins/system/vm_multiupload_attachment/js/multiupload/server/uploads/<?php echo $pdf_file;?>"><span class="text"><?php echo JText::_('MANUAL');?></span><span class="icon-PDF"></span></a>
 				</div>
 				<?php }?>
-				<div class="col-xs-6 pad0">
+				<div class="col-xs-12 pad0 mt10">
 					<a class="btn btn-intros mr0" href="index.php?option=com_virtuemart&view=category&layout=documents&virtuemart_category_id=10&Itemid=1001&lang=en"><span class="text2"><?php echo JText::_('SPARE_PARTS');?></span><span class="icon-setting"></span></a>
 				</div>
 			</div>

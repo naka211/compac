@@ -9,7 +9,7 @@ defined('_JEXEC') or die;
 				<?php echo $this->item->fulltext;?>	
 			</div>
 			<div class="row mt10 text-left">
-				<a class="btnMore" onclick="window.history.back();" href="#"><?php echo JText::_('BACK');?></a>
+				<a class="btnMore" href="javascript:history.go(-1);"><?php echo JText::_('BACK');?></a>
 			</div>
 		</div>
 	</div>

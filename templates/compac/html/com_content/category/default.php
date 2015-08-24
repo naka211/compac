@@ -32,7 +32,7 @@ if ( ($showPhone || $detect->isMobile()) && ($enablePhone) && ($_SESSION['mobile
 				</div>
 				<div class="news-wrapper clear-fix">
 					<?php foreach($this->items as $item){
-					$link = "index.php?option=com_content&view=article&id=".$item->id."&Itemid=1004";
+					$link = JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid, $item->language));
 					$images = json_decode($item->images);
 					$tmp = explode(" ", $item->created);
 					$tmp1 = explode("-", $tmp[0]);

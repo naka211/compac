@@ -89,6 +89,6 @@ class JConfig {
 	public $cookie_domain = '';
 	public $cookie_path = '';
 	public $asset_id = '1';
-	public $show_phone = '0';
+	public $show_phone = '1';
 	public $enable_phone = '1';
 }

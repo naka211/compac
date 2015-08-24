@@ -1,7 +1,17 @@
 <?php
 defined('_JEXEC') or die;
 JHTML::_('behavior.formvalidator');
+$tmpl = JURI::base().'templates/compac/mobile/';
 ?>
+<script type="text/javascript" src="<?php echo $tmpl;?>js/jquery.h5validate.js"></script>
+<script>
+jQuery(document).ready(function () {
+    jQuery('form').h5Validate();
+});
+</script>
+<style>
+.invalid {border: 1px solid red;}
+</style>
 <div class="container contact">
 	<div class="row">
 		<div class="col-md-12">

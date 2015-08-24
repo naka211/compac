@@ -7,7 +7,7 @@ defined('_JEXEC') or die;
 			<h2 class="no-span"><?php echo $this->category->title;?></h2>
 			<div class="row">
 				<?php foreach($this->items as $item){
-				$link = "index.php?option=com_content&view=article&id=".$item->id."&Itemid=1004";
+				$link = JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid, $item->language));
 				$images = json_decode($item->images);
 				$tmp = explode(" ", $item->created);
 				$tmp1 = explode("-", $tmp[0]);
