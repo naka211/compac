@@ -276,7 +276,7 @@ else {
 							$editorFields[] = array( "editor_".$field->Name, "refField_".$field->Name );
 							// parameters : areaname, content, hidden field, width, height, rows, cols
 							//v2.1 fix html encoding display
-							echo $wysiwygeditor->display("refField_".$field->Name,htmlspecialchars($translationContent->value, ENT_COMPAT, 'UTF-8'), '100%','300', '70', '15',false);
+							echo $wysiwygeditor->display("refField_".$field->Name,htmlspecialchars($translationContent->value, ENT_COMPAT, 'UTF-8'), '100%','300', '70', '15',true);
 						}  else if( strtolower($field->Type)=='images' ) {
                             $length = ($field->Length>0)?$field->Length:60;
                             $maxLength = ($field->MaxLength>0) ? "maxlength=".$field->MaxLength:"";
