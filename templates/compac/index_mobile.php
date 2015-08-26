@@ -76,6 +76,7 @@ $flag = $tmp[0];
 <body>
 <div class="header"> <a class="menu" href="#menu-left"><i class="fa fa-bars fa-lg"></i></a>
 	<h2><a class="logo" href="<?php echo JURI::base();?>">Compac</a></h2>
+	<img alt="" src="images/stories/logo-<?php echo $langTag;?>.png" class="img-responsive i-warranty">
 	<a class="cart" href="#myModal" data-toggle="modal"><img src="media/mod_falang/images/<?php echo $flag;?>.gif" alt=""></a> </div>
 <nav id="menu-left">
 	{module Main Menu}
