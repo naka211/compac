@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" ?>
+<falang type="contentelement">
+  <name>Virtuemart:Product Url</name>
+	<author>T.Trung</author>
+  <version>1.0</version>
+  <description>Definition for the product url</description>
+  <reference>
+  	<table name="virtuemart_products">
+  		<field type="referenceid" name="virtuemart_product_id" translate="0">ID</field>
+  		<field type="titletext" name="product_sku" translate="0">Title</field>
+  		<field type="text" name="product_url" translate="1">Product url</field>
+  	</table>
+   </reference>
+   <translationfilters>
+      <keyword>product_sku</keyword>
+  </translationfilters>
+</falang>

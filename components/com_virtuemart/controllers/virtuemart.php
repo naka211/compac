@@ -86,8 +86,13 @@ class VirtueMartControllerVirtuemart extends JControllerLegacy
 		} else {
 			echo '<script>alert("Password is incorrect, please contact us."); history.back();</script>';
 		}
-		
-		
+	}
+	
+	function setScreenWidth(){
+		$width = JRequest::getVar("width");
+		$session = JFactory::getSession();
+        $session->set('screenWidth', $width);
+        die(true);
 	}
 }
  //pure php no closing tag

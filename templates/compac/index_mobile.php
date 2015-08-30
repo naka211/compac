@@ -60,6 +60,7 @@ $flag = $tmp[0];
 			auto: true,
   			// autoControls: true
 		});
+		
 	});
 	
 	jQuery(function() {
@@ -71,6 +72,9 @@ $flag = $tmp[0];
 			addCounters: true
 		});
 	});
+	
+	jQuery.post("<?php echo JURI::base().'index.php?option=com_virtuemart&controller=virtuemart&task=setScreenWidth';?>", {width: screen.width});
+	
 </script>
 </head>
 <body>

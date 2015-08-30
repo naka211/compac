@@ -1,6 +1,7 @@
 <?php
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
+$session = JFactory::getSession();
 $imageArr = array();
 $accessArr = array();
 foreach($this->product->images as $image){
@@ -26,6 +27,12 @@ foreach($files as $file){
 $q = 
 $db->setQuery("SELECT * FROM #__virtuemart_product_coord WHERE product_id = ".(int)$this->product->virtuemart_product_id." ORDER BY `order` ASC");
 $coords = $db->loadObjectList();
+
+if($session->get("screenWidth") <= 320){
+	$ratio = 0.81;
+} else {
+	$ratio = 1;
+}
 ?>
 <script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -86,7 +93,7 @@ $coords = $db->loadObjectList();
 					<div class="col-xs-12 pad0 img-larg">
 						<img src="<?php echo JURI::base().'images/upload/'.$this->product->coord_image;?>">
 						<?php for($i = 0; $i < count($coords); $i++){?>
-						<span style="top: <?php echo $coords[$i]->y;?>px; left: <?php echo $coords[$i]->x;?>px;" class="circle"><?php echo $i + 1; ?></span>
+						<span style="top: <?php echo $coords[$i]->y;?>px; left: <?php echo $coords[$i]->x*$ratio;?>px;" class="circle"><?php echo $i + 1; ?></span>
 						<?php }?>
 					</div>
 					</div>
