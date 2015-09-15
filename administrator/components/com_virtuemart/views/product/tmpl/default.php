@@ -77,6 +77,7 @@ if(empty($imgWidth)) $imgWidth = 80;
 
 		<th width="20%"><?php echo $this->sort('product_name',$col_product_name) ?> </th>
 		<th width="10%">Coordinate</th>
+		<th width="5%"></th>
 		<?php /*if (!$product_parent_id ) { ?>
                 <th width="10%"><?php echo $this->sort('product_parent_id','COM_VIRTUEMART_PRODUCT_CHILDREN_OF'); ?></th>
                 <?php } ?>

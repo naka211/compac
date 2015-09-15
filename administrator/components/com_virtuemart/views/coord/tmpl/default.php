@@ -35,7 +35,7 @@ $size = array();
 $coords = array();
 if(count($prod)){
 	if(!empty($prod->coord_image)){
-		$size = getimagesize($targetFolder."/".$prod->coord_image);
+		$size = getimagesize(JPATH_ROOT.DIRECTORY_SEPARATOR."images".DIRECTORY_SEPARATOR."upload".DIRECTORY_SEPARATOR.$prod->coord_image);
 	}
 	$q = "SELECT * FROM #__virtuemart_product_coord WHERE `product_id` = $product_id ORDER BY `order` ASC";
 	$db->setQuery($q);

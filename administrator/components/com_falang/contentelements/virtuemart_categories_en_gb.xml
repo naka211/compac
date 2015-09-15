@@ -11,4 +11,7 @@
   		<field type="text" name="category_name" translate="1">Category name</field>
   	</table>
    </reference>
+   <translationfilters>
+      <keyword>category_name</keyword>
+  </translationfilters>
 </falang>

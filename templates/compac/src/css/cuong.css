@@ -29,7 +29,7 @@
 .breakcum li a{color:#404040; text-decoration:none; padding-right:10px;}
 .breakcum li.first{list-style:none;}
 .title-prd img{vertical-align:middle;}
-.title-prd{font-size:18px; font-weight:bold; color:#318c6d; margin-top:20px;}
+.title-prd{font-size:18px; font-weight:bold; color:#318c6d; margin-top:10px;}
 .prd-rows .prd-item{ margin-bottom:10px; margin-top:10px;}
 .prd-rows{margin-bottom:20px; overflow:hidden; margin-top:10px;}
 .border-prd{ border-bottom:1px #c6c6c6 solid; width:900px;}

@@ -74,6 +74,7 @@ $coords = $db->loadObjectList();
 				<div class="heading clear-fix">
 					<h2><?php echo $this->product->product_name ?></h2>
 				</div>
+				{module Breadcrumbs}
 				<div class="clear"></div>
 				<div class="prd-detail">
 					<div class="left-prd">

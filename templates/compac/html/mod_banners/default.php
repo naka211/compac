@@ -32,9 +32,9 @@ require_once JPATH_ROOT . '/components/com_banners/helpers/banner.php';
 $baseurl = JUri::base();
 ?>
 <ul id="main-slider">
-<?php foreach ($list as $item){ ?>
-		<?php $link = JRoute::_('index.php?option=com_banners&task=click&id=' . $item->id);?>
+<?php foreach ($list as $item){?>
+		<?php //$link = JRoute::_('index.php?option=com_banners&task=click&id=' . $item->id);?>
 		<?php $imageurl = $item->params->get('imageurl');?>
-		<li><a href="<?php echo $link;?>"><img src="<?php echo $baseurl . $imageurl;?>" /></a></li>
+		<li><a href="<?php echo $item->clickurl;?>"><img src="<?php echo $baseurl . $imageurl;?>" /></a></li>
 <?php }?>
 </ul>

@@ -1,19 +1,27 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.beez3
+ * @subpackage  mod_breadcrumbs
  *
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
+
+JHtml::_('bootstrap.tooltip');
+
 ?>
 
-<div class = "breadcrumbs<?php echo $moduleclass_sfx; ?>">
-<?php if ($params->get('showHere', 1))
+<ul class="breakcum<?php echo $moduleclass_sfx; ?>">
+	<?php
+	if ($params->get('showHere', 1))
 	{
-		echo '<span class="showHere">' .JText::_('MOD_BREADCRUMBS_HERE').'</span>';
+		echo '<li class="active">' . JText::_('MOD_BREADCRUMBS_HERE') . '&#160;</li>';
+	}
+	else
+	{
+		//echo '<li class="active"><span class="divider icon-location"></span></li>';
 	}
 
 	// Get rid of duplicated entries on trail including home page when using multilanguage
@@ -31,15 +39,26 @@ defined('_JEXEC') or die;
 	prev($list);
 	$penult_item_key = key($list);
 
-	// Generate the trail
-	foreach ($list as $key => $item) :
 	// Make a link if not the last item in the breadcrumbs
 	$show_last = $params->get('showLast', 1);
+
+	// Generate the trail
+	foreach ($list as $key => $item) :
 	if ($key != $last_item_key)
 	{
 		// Render all but last item - along with separator
+		if($key == 0) {
+			echo '<li style="list-style:none;">';
+		} else {
+			echo '<li>';
+		}
+		
 		if (!empty($item->link))
 		{
+			//T.Trung
+			if($key == 1)
+			$item->link = $item->link."&layout=level2";
+			//T.Trung end
 			echo '<a href="' . $item->link . '" class="pathway">' . $item->name . '</a>';
 		}
 		else
@@ -49,14 +68,17 @@ defined('_JEXEC') or die;
 
 		if (($key != $penult_item_key) || $show_last)
 		{
-			echo ' '.$separator.' ';
+			//echo '<span class="divider">' . $separator . '</span>';
 		}
 
+		echo '</li>';
 	}
 	elseif ($show_last)
 	{
 		// Render last item if reqd.
+		echo '<li class="active">';
 		echo '<span>' . $item->name . '</span>';
+		echo '</li>';
 	}
 	endforeach; ?>
-</div>
+</ul>

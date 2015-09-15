@@ -6,11 +6,11 @@ $baseurl = JUri::base();
 <div id="myCarousel2" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
 		<?php foreach ($list as $item){
-			$link = JRoute::_('index.php?option=com_banners&task=click&id=' . $item->id);
+			//$link = JRoute::_('index.php?option=com_banners&task=click&id=' . $item->id);
 			$imageurl = $item->params->get('imageurl');
 		?>
 		<div class="item <?php if($i==1) echo 'active';?>">
-			<a href="<?php echo $link; ?>">
+			<a href="<?php echo $item->clickurl; ?>">
 				<img src="<?php echo $baseurl . $imageurl;?>" alt="<?php echo $alt;?>"/>
 			</a>
 		</div>

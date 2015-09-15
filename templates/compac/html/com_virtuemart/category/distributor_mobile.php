@@ -25,6 +25,9 @@ if($session->get("accessDis") != 1){
 					<ul class="list-models">
 						<?php
 						$products = $productModel->getProductsInCategory ($category->virtuemart_category_id);
+						/*$q = "SELECT p.virtuemart_product_id, pe.product_name FROM #__virtuemart_products p INNER JOIN #__virtuemart_products_en_gb pe ON p.virtuemart_product_id = pe.virtuemart_product_id INNER JOIN #__virtuemart_product_categories pc ON p.virtuemart_product_id = pc.virtuemart_product_id WHERE p.published = 1 AND pc.virtuemart_category_id = ".$category->virtuemart_category_id." ORDER BY p.pordering, pe.product_name";
+						$db->setQuery($q);
+						$products = $db->loadObjectList();*/
 						foreach($products as $product){
 							$db->setQuery("SELECT file_name FROM #__virtuemart_product_attachments WHERE virtuemart_product_id = ".(int)$product->virtuemart_product_id);	
 							$file_name = $db->loadResult();

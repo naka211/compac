@@ -31,6 +31,8 @@ $db= JFactory::getDBO();
 				<div class="heading clear-fix">
 					<h2><?php echo vmText::_($this->category->category_name) ?></h2>
 				</div>
+				{module Breadcrumbs}
+				<div class="clear"></div>
 				<div class="list-product-wrapper clear-fix">
 					<?php foreach ($this->category->children as $category ) {
 					$products1 = $productModel->getProductsInCategory ($category->virtuemart_category_id);

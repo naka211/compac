@@ -11,4 +11,7 @@
   		<field type="text" name="product_name" translate="1">Product name</field>
   	</table>
    </reference>
+   <translationfilters>
+      <keyword>product_name</keyword>
+  </translationfilters>
 </falang>
