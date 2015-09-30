@@ -31,6 +31,7 @@ $moduleclass_sfx = $params->get('moduleclass_sfx','');
 $layout = $params->get('layout','default');
 $active_category_id = vRequest::getInt('virtuemart_category_id', '0');
 $vendorId = '1';
+$level = $params->get('level','2');
 
 $db = JFactory::getDBO();
 $query = "SELECT c.virtuemart_category_id, c.category_name, m.file_url FROM #__virtuemart_categories_en_gb c 

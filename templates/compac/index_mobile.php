@@ -103,7 +103,7 @@ $flag = $tmp[0];
 			<div class="container">
 				<div class="row">
 					<h2><?php echo JText::_('PRODUCTS');?></h2>
-					{module HomeProductSlider}
+					{module HomeSlider}
 				</div>
 			</div>
 		</section>

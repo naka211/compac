@@ -109,7 +109,7 @@ jQuery(document).ready(function() {
 	
 	
 <div class="max-container" id="max-container-footer">
-	{module HomeProductSlider}
+	{module HomeSlider}
 	 
 	
 	<div class="container">
