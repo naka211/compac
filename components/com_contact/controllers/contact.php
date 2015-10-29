@@ -53,6 +53,13 @@ class ContactControllerContact extends JControllerForm
 		// Get the data from POST
 		$data    = $this->input->post->get('jform', array(), 'array');
 		$contact = $model->getItem($id);
+		
+		//T.Trung
+		$lang = JFactory::getLanguage();
+		if($lang->getTag() == "de-DE"){
+			$contact->email_to = "ll@compac.dk";
+		}
+		//T.Trung end
 
 		$params->merge($contact->params);
 
